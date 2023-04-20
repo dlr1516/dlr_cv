@@ -5,7 +5,9 @@
 \usepackage{times}
 \usepackage{bibentry}
 \usepackage{notoccite}
-\nobibliography{pubblicazioni} 
+\usepackage{soul}  % for underline with wrapping \ul
+%\PassOptionsToPackage{hyphens}{url}\usepackage[colorlinks=false]{hyperref}
+\nobibliography{pubblicazioni}
 
 %\usepackage{fancyhdr}
 \makeatletter
@@ -19,13 +21,26 @@
 \newcommand{\ITEMDATE}[1]{\item \textit{#1:}\\}
 \newcommand{\BIBCITE}[1]{\cite{#1} \bibentry{#1}}
 \newcommand{\BIBCITEM}[1]{\item[\cite{#1}] \bibentry{#1}}
+\newcommand{\BIBCITENUM}[1]{\item \cite{#1} \bibentry{#1}}
 
 
 
 \begin{document}
 
 \bibliographystyle{unsrt_dlr}
-\nocite{lodirizzini2015ijars, aleotti2014jirs, cigolini2014jamris, lodirizzini2009ras, 
+\nocite{
+lodirizzini2019ral,galasso2019rcim,
+lodirizzini2018pr,simetti2018joe,
+kallasi2017ras,lodirizzini2017caee, 
+casalino2016mtsj, kallasi2016ral, 
+lodirizzini2015ijars, 
+aleotti2014jirs, cigolini2014jamris, 
+lodirizzini2009ras, 
+aleotti2020ram,galasso2020sensors,consolini2020pr,
+chiaravalli2020etfa,amoretti2020smartsys,
+lodirizzini2018irosws,
+lodirizzini2017iros, 
+kallasi2016iros, oleari2016iecon,
 kallasi2015oceans, oleari2015oceans,
 aleotti2014iros, oleari2014ifac, lodirizzini2014ias, kallasi2014iarp,
 lodirizzini2013ecmr, valeriani2013acra, oleari2013iccp, 
@@ -53,22 +68,23 @@ lodirizzini2009thesis}
 
 \section{Informazioni Generali} 
 
+{\small
 Nato ad Asola (MN), il 23 maggio 1981. \\
 Codice Fiscale LDRDRA81E23A470D. \\
 Cittadinanza: italiana. \\
-Obblighi militari: dispensato. \\
+%Obblighi militari: dispensato. \\
 Residenza e Domicilio: via E. Fermi, 11, 46010 Commessaggio (MN). \\
-Cellulate: +39 333 6161152. \\
+Cellulare: +39 333 6161152. \\
 E-mail: \verb|dario.lodirizzini@gmail.com|\\
 PEC: \verb|dario.lodirizzini@pec.it|\\
 
-\section*{Indirizzo di Lavoro}
-
-Dipartimento di Ingegneria dell'Informazione,\\
+\noindent \ul{Indirizzo di Lavoro:}\\
+Dipartimento di Ingegneria e Architettura,\\
 Universit\`a degli Studi di Parma\\
 viale Parco Area delle Scienze, 181A I-43124 Parma Italy\\
 Tel.:+39 0521 906147, Fax: +39 0521 905723\\
 E-mail: \verb|dario.lodirizzini@unipr.it|\\
+}
 
 % ---------------------------------------------------------
 % CARRIERA SCOLASTICA
@@ -77,26 +93,23 @@ E-mail: \verb|dario.lodirizzini@unipr.it|\\
 \subsection*{Carriera Scolastica e Formazione}
 
 \begin{itemize}
-
+\itemsep0em 
 \ITEMDATE{Gennaio 2006 - Marzo 2009}
   \emph{Dottorato di Ricerca in Tecnologie dell'Informazione} 
   XXI ciclo, conseguito il 3 marzo 2009 presso l'Universit\`a degli Studi di Parma.
   Tesi di Dottorato dal titolo ``Computation and Time Constraints in Localization and Mapping Problems''.
-
 \ITEMDATE{Ottobre 2003 - Dicembre 2005}
 \emph{Laurea Specialistica in Ingegneria Informatica}
 conseguita il 15 dicembre 2005 presso l'Universit\`a degli Studi di Parma, 
 con valutazione 110/110 e lode.
 Tesi di Laurea dal titolo ``Progettazione di una Libreria per la Localizzazione 
 e Fusione Sensoriale basata su Filtri Particellari''.
-
 \ITEMDATE{Ottobre 2000 - Settembre 2003}
 \emph{Laurea in Ingegneria Informatica} (triennale) 
 conseguita il 25 settembre 2003 presso l'Universit\`a degli Studi di Parma, 
 con valutazione 110/110 e lode.
 Tesi di Laurea dal titolo ``La Localizzazione in interni tramite una Rete Wireless 
 Ethernet''.
-
 \ITEMDATE{Luglio 2000}
 \emph{Maturit\`a scientifica} conseguita
 presso l'Istituto di Istruzione Tecnico-Scientifica E. Sanfelice di Viadana (MN) con votazione di 100/100.
@@ -107,11 +120,61 @@ presso l'Istituto di Istruzione Tecnico-Scientifica E. Sanfelice di Viadana (MN)
 % POSIZIONE ATTUALE
 % ---------------------------------------------------------
 
-\subsection*{Posizione Attuale}
+\section{Prospetto riassuntivo}
 
-Dario Lodi Rizzini \`e titolare dell'Assegno di Ricerca (SSD ING-INF/05) dal tema ``Metodi probabilistici per il riconoscimento
-di oggetti in compiti di manipolazione e navigazione robotica''
-presso il Dipartimento di Ingegneria dell'Informazione dell'Universit\`a degli Studi di Parma.
+% ---------------------------------------------------------
+
+\subsection*{Posizione attuale}
+
+\begin{itemize}
+\item Dario Lodi Rizzini \`e \ul{Ricercatore a Tempo Determinato} (settore concorsuale 09/H1, SSD ING-INF/05, ai sensi dell'articolo 24, comma 3, lettera a) Legge  n. 240/2010) 
+e \ul{docente titolare} dell'insegnamento di ``Robotica'' (6 CFU) presso il Corso di Laurea Magistrale in Ingegneria Informatica 
+presso il Dipartimento di Ingegneria e Architettura dell'Universit\`a degli Studi di Parma. 
+
+\item Ha conseguito l'Abilitazione Scientifica Nazionale (ASN) per \ul{Professore di II Fascia} per il settore concorsuale 09/H1, SSD ING-INF/05, Bando D.D. 1532/2016, con validit\`a dal 09/09/2019 al 09/09/2025 (poi esteso al 09/09/2028 con art. 5, co. 1, del D.L. 126/2019 (L. 156/2019)).
+\end{itemize}
+
+% ---------------------------------------------------------
+
+\subsection*{Produzione scientifica}
+
+\begin{itemize}
+\item Dario Lodi Rizzini \`e autore di \textbf{46} \emph{pubblicazioni scientifiche} complessive, di cui 
+  \textbf{12} articoli su \emph{riviste internazionali}, 
+  \textbf{28} articoli su \emph{atti di conferenze internazionali} con revisione sul testo completo,
+  \textbf{1} \emph{capitolo su libro internazionale}
+
+\item Indicatori bibliometrici (al 15/10/2020): 
+  \begin{itemize}
+  \item Scopus: citazioni \textbf{320}, h-index \textbf{11}
+  \item Google Scholar: citazioni \textbf{483}, h-index \textbf{12}
+  \end{itemize}
+\end{itemize}
+
+% ---------------------------------------------------------
+
+\subsection*{Responsabilit\`a di progetti e contratti di ricerca}
+
+\begin{itemize}
+\item Referente scientifico (principal investigator) di 2 progetti istituzionali (budget complessivo di Euro 90.867,44)
+\item Responsabilit\`a di coordinatore di unit\`a di lavoro (work package) o di task in 2 progetti istituzionali
+\item Responsabile scientifico (principal investigator) di 2 contratti di ricerca in convenzione con aziende private (budget complessivo di Euro 141.500,00)
+\item Partecipazione ad altri 6 progetti istituzionali e 4 contratti di ricerca
+\end{itemize}
+
+% ---------------------------------------------------------
+
+\subsection*{Attivit\`a didattica}
+
+\begin{itemize}
+\item Docente titolare di insegnamento di Laurea Magistrale per 6 CFU per 5 anni (30 CFU complessivi)
+\item Docente per corso di dottorato di ricerca per 2 CFU per 2 anni (4 CFU complessivi) 
+\item Docente a contratto di insegnamenti di Laurea Magistrale per 6 CFU per 5 anni o moduli di insegnamenti per 3 CFU (1 anno) e 2 CFU (1 anno) (35 CFU complessivi) 
+\item Attivit\`a di didattica di supporto da pi\`u di 14 anni
+\item Supervisione di 3 dottorandi di ricerca e co-tutor di altri 2 dottorandi
+\item Relatore di 6 tesi di Laurea o Laurea Magistrale (Specialistica) e correlatore di 24 tesi
+\end{itemize}
+
 
 % ---------------------------------------------------------
 % ATTIVITA' DI RICERCA
@@ -119,105 +182,141 @@ presso il Dipartimento di Ingegneria dell'Informazione dell'Universit\`a degli S
 
 \section{Attivit\`a di Ricerca}
 
-Dario Lodi Rizzini svolge attivit\`a di ricerca nell'ambito della Robotica occupandosi 
-di problemi di localizzazione, mappatura e navigazione di robot mobili,
-percezione avanzata e riconoscimento di oggetti.
-Tutte le tematiche sono indagate tenendo in considerazione l'esigenza di elaborazione 
-in tempo reale o in linea per l'esecuzione dei compiti da parte del sistema robotico. 
-Dall'inizio del suo dottorato (2006) l'attivit\`a di ricerca di Dario Lodi Rizzini ha 
-portato a 
-\textbf{4 articoli su riviste internazionali}, 
-\textbf{27 articoli su atti di conferenze internazionali e workshop},
+Dario Lodi Rizzini svolge attivit\`a di ricerca nell'ambito della Robotica occupandosi di problemi di localizzazione, mappatura e navigazione di robot mobili, percezione avanzata e riconoscimento di oggetti.
+%Tutte le tematiche sono indagate tenendo in considerazione l'esigenza di elaborazione in tempo reale o in linea per l'esecuzione dei compiti da parte del sistema robotico. 
+Dall'inizio del suo dottorato (2006) l'attivit\`a di ricerca di Dario Lodi Rizzini ha portato a 
+\textbf{12 articoli su riviste internazionali}, 
+\textbf{33 articoli su atti di conferenze internazionali e workshop},
 \textbf{1 capitolo su libro internazionale} 
-per un totale di \textbf{32 contributi scientifici}.
-Ulteriori 2 articoli sono in fase di valutazione presso sedi internazionali.
+per un totale di oltre \textbf{46 contributi scientifici}.
+Tre ulteriori articoli sono in fase di sottomissione o fi valutazione presso sedi internazionali.
  
-L'attivit\`a si pu\`o riassumere in quattro temi principali.  
+L'attivit\`a si pu\`o riassumere in tre temi principali descritti di seguito.  
 
-\subsection*{Vincoli Temporali nei problemi di Localizzazione e Mapping}
+\subsection*{Localizzazione e Mapping di Robot Mobili}
+%\subsection*{Vincoli Temporali nei problemi di Localizzazione e Mapping}
 
-Studio dei problemi di \emph{localizzazione e mapping} (SLAM) di robot mobili con particolare 
-attenzione alla presenza di vincoli temporali e all'evoluzione dell'ambiente nel tempo.
-Ha esteso il \emph{Real-Time Particle Filter} (RTPF), una variante 
-avanzata del localizzatore basato su filtro particellare in grado di 
-garantire il rispetto di vincoli real-time, introducendo un diverso metodo 
-per il calcolo di parametri critici per la convergenza del RTPF~\cite{lodirizzini2007icinco,lodirizzini2007ecmr,lodirizzini2008improved}.
-Nell'attivit\`a di ricerca \`e stata impiegata l'occupancy grid map che permette di integrare 
-in un'unica rappresentazione le misure ottenute da sensori di prossimit\`a come i laser scanner.
+Dario Lodi Rizzini si \`e occupato di problemi di  \emph{localizzazione e mapping} (SLAM) di robot mobili a partire dal dottorato di ricerca ed ha affrontato il problema generale sotto diversi aspetti.
+
+Alcuni dei contributi pi\`u significativi sono stati ottentuti nell'ambito dell'approccio \emph{graphical model} ai problemi di localizzazione e mapping. 
+I metodi graphical model formulano la stima della mappa tramite un modello a grafo, i cui nodi sono le variabili aleatorie della mappa (pose del robot, landmark) e i cui archi sono le dipendenze ottenute dai dati sensoriali. 
+La soluzione \`e calcolata cercando la configurazione corrispondente al minimo della funzione di negative log-likelihood associata al grafo (da cui il nome alternativo di maximum likelihood SLAM). 
+In collaborazione con il gruppo dell'Universit\`a di Freiburg \`e stato proposto uno dei primi ottimizzatori efficienti di mappe basato su \emph{stochastic gradient descent} e adatto all'esecuzione in linea~\cite{grisetti2008icra,lodirizzini2009ras}. 
+La struttura del graphical model si presta ad un partizionamento delle variabili in cluster di variabili con poca interdipendenza, che \`e stato sfruttato per determinare la mappa con metodo di rilassamento Gauss-Seidel eseguibile con calcolo parallelo~\cite{lodirizzini2009iros} e per definire una procedura di soluzione della mappa in applicazioni di esplorazione multi-robot~\cite{lodirizzini2010iros,lodirizzini2010graphbot}. 
+\`E stato proposto un algoritmo per inglobare in modo compatto nella struttura del grafo pi\`u ipotesi sulla topologia della mappa~\cite{lodirizzini2011icra}. 
+Ciascuna ipotesi corrisponde ad un diverso esito della procedura di data association, ossia dal riconoscimento di regioni dell'ambiente gi\`a visitate. 
+L'algoritmo multi-ipotesi rende possibile il recupero di errori di associazione. 
+Un contributo rilevante \`e stata l'analisi della formulazione \emph{pose graph}, un caso particolare di graphical model costituito solo da pose del robot, e la derivazione di una soluzione parziale in forma chiusa~\cite{lodirizzini2009ecmr,lodirizzini2009icar} ottenuta sotto opportune ipotesi. 
+\`E stato messo in evidenza probabilmente per la prima volta in letteratura la dipendenza completa delle variabili di posizione da quelle di orientamento. 
+
+L'approccio di analisi e scomposizione del problema finalizzato all'esecuzione in linea rispettando vincoli temporali \`e stato applicato anche agli algoritmi di localizzazione del robot basati su filtri particellari. 
+\`E stata proposta una variante del \emph{Real-Time Particle Filter} (RTPF)~\cite{lodirizzini2007icinco,lodirizzini2007ecmr,lodirizzini2008improved}, che distribuisce i campioni della distribuzione dello stato del sistema su diversi intervalli temporali. 
+Il contributo originale consiste nel metodo di calcolo dei pesi per il ricampionamento dai campioni riferiti a diversi intervalli, migliorando la stabilit\`a del RTPF. 
+
+%Studio dei problemi di SLAM di robot mobili con particolare 
+%attenzione alla presenza di vincoli temporali e all'evoluzione dell'ambiente nel tempo.
+%Ha esteso il \emph{Real-Time Particle Filter} (RTPF), una variante 
+%avanzata del localizzatore basato su filtro particellare in grado di 
+%garantire il rispetto di vincoli real-time, introducendo un diverso metodo 
+%per il calcolo di parametri critici per la convergenza del RTPF~\cite{lodirizzini2007icinco,lodirizzini2007ecmr,lodirizzini2008improved}.
+%Nell'attivit\`a di ricerca \`e stata impiegata l'occupancy grid map che permette di integrare 
+%in un'unica rappresentazione le misure ottenute da sensori di prossimit\`a come i laser scanner.
 %Sono state studiate altre rappresentazioni computazionalmente meno onerose ed adatte a gestire 
 %oggetti semi-statici per consentire la navigazione efficiente di AGV industriali. 
 
+%\textbf{Pubblicazioni inerenti:}
+%3 lavori in atti di conferenze internazionali~\cite{grisetti2008icra,lodirizzini2007icinco,lodirizzini2007ecmr},
+%1 capitolo di libro~\cite{lodirizzini2008improved}.
+
+%\subsection*{Metodi di Graphical SLAM}
+
+%Ha studiato la formulazione \emph{maximum likelihood} (ML) dei problemi di mapping
+%che permette di individuare le dipendenze tra gli elementi della mappa e di decomporre il 
+%problema generale in sottoproblemi computazionalmente pi\`u semplici. 
+%In collaborazione con il gruppo dell'Universit\`a di Freiburg ha
+%proposto un risolutore di mappe basato su \emph{stochastic gradient descent} adatto 
+%all'esecuzione in linea~\cite{grisetti2008icra,lodirizzini2009ras}. 
+
+%Le caratteristiche del paradigma ML mapping sono state sfruttate per partizionare la mappa 
+%in cluster indipendenti, che possono essere elaborati in parallelo~\cite{lodirizzini2009iros}, consentendo
+%la risoluzione della mappa in contesti distribuiti e multi-robot~\cite{lodirizzini2010iros,lodirizzini2010graphbot}.
+%Una diversa decomposizione del problema ML SLAM ha consentito di proporre
+%un algoritmo di costruzione di mappe multi-ipotesi al fine di 
+%fornire un metodo robusto agli errori nell'associazione di dati\cite{lodirizzini2011icra}.
+%Tale metodo si propone di estendere i vantaggi delle metodologie multi-ipotesi tradizionali applicate
+%originariamente al mapping topologico alla stima di mappe metriche. 
+
+%Tale formulazione dei problemi di SLAM si presta all'analisi formale:
+%Dario Lodi Rizzini ricavato una soluzione parziale in forma chiusa del ML mappping, 
+%che dimostra le relazioni tra le variabili del problema~\cite{lodirizzini2009ecmr,lodirizzini2009icar}.
+%\`E stata evidenziata la dipendenza tra le variabili 
+%che rappresentano l'orientamento del robot e quelle che ne definiscono posizione. 
+
+Un altro contributo significativo \`e stato ottenuto nel riconoscimento di keypoint feature da misure acquisite tramite sensori range finder ed, in particolare, a tecnologia laser. 
+Le keypoint feature possono essere utilizzate per costituire mappe di landmark, particolarmente efficienti ed applicabili ad esempio alla localizzazione di AGV a guida laser frequantemente impiegati nella gesione automatica di magazzini industriali. 
+La letteratura su keypoint feature per laser scanner \`e particolarmente carente. 
+\`E, quindi, stata proposta la feature FALKO (Fast Adaptive Laser Keypoint Orientation-invariant)~\cite{kallasi2016ral} per l'individuazione di punti di interesse in base ad uno scoring del vicinato di ciascun punto e per il calcolo di descrittori. 
+Gli esperimenti hanno evidenziato risultati migliori rispetto allo stato dell'arte sia in termini di robustezza sia di identificazione delle regioni della mappa gi\`a esplorata. 
+Inoltre, sono stati sviluppati metodi di signature per identificare ed associare insiemi di landmark basati su criteri geometrici~\cite{lodirizzini2019ral, lodirizzini2017iros, kallasi2016iros} in modo da rendere pi\`u robusto il riconoscimento di luoghi visitati e, quindi, la localizzazione. 
+In particolare, la signature GLAROT (Geometric Landmark Relation Orientation-invariant) identifica efficientemente potenziali corrispondenze tra mappe locali. 
+GLAROT \`e stato esteso per essere applicato a mappe di landmark tridimensionali~\cite{lodirizzini2017iros}. 
+La signature Geometric Relation Distribution (GRD) supera le limitazioni derivanti dalla discretizzazione di GLAROT rappresentando le relazioni geometriche e la loro incertezza tramite una distribuzione continua espansa in serie di Fourier e polinomi di Laguerre. 
+
+Un altro interesse di ricerca \`e rappresentato dai metodi di registrazione di point cloud con garanzie di ottimalit\`a globale. 
+In particolare, \`e stat proposto l'Angular Randon Spectrum (ARS)~\cite{lodirizzini2018pr} per rappresentare la relazioni di collinearit\`a di punti del piano (pi\`u precisamente tra punti rappresentati da Gaussian Mixture Model) tramite funzioni continue. 
+Il confronto per correlazione tra gli ARS corrispondenti ad osservazioni da punti di vista differenti ambiente permette di determinare la rotazione, relativa disaccoppiandone la stima dalla traslazione. 
+L'algoritmo proposto in~\cite{consolini2020pr} \`e uno dei primi algoritmi con garanzie di ottimalit\`a globale per la registrazione di punti. 
+Il contributo principale \`e rappresentato dalla proposta di stime efficienti di lower bound per iterazione di algoritmo branch and bound.
+
+%\textbf{Pubblicazioni inerenti:}
+%1 lavoro su rivista internazionale~\cite{lodirizzini2009ras},
+%7 lavori in atti di conferenze internazionali~\cite{
+%lodirizzini2011icra,lodirizzini2010iros,lodirizzini2010graphbot,
+%lodirizzini2009iros,lodirizzini2009ecmr,lodirizzini2009icar,grisetti2008icra}.
 \textbf{Pubblicazioni inerenti:}
-3 lavori in atti di conferenze internazionali~\cite{grisetti2008icra,lodirizzini2007icinco,lodirizzini2007ecmr},
+4 lavori su rivista internazionale~\cite{lodirizzini2019ral, lodirizzini2018pr, kallasi2016ral, lodirizzini2009ras},
+10 lavori in atti di conferenze internazionali~\cite{
+lodirizzini2018irosws, lodirizzini2017iros, kallasi2016iros, lodirizzini2011icra, lodirizzini2010iros, lodirizzini2010graphbot,
+lodirizzini2009iros, lodirizzini2009ecmr, lodirizzini2009icar, grisetti2008icra},
 1 capitolo di libro~\cite{lodirizzini2008improved}.
-
-\subsection*{Metodi di Graphical SLAM}
-
-Ha studiato la formulazione \emph{maximum likelihood} (ML) dei problemi di mapping
-che permette di individuare le dipendenze tra gli elementi della mappa e di decomporre il 
-problema generale in sottoproblemi computazionalmente pi\`u semplici. 
-In collaborazione con il gruppo dell'Universit\`a di Freiburg ha
-proposto un risolutore di mappe basato su \emph{stochastic gradient descent} adatto 
-all'esecuzione in linea~\cite{grisetti2008icra,lodirizzini2009ras}. 
-
-Le caratteristiche del paradigma ML mapping sono state sfruttate per partizionare la mappa 
-in cluster indipendenti, che possono essere elaborati in parallelo~\cite{lodirizzini2009iros}, consentendo
-la risoluzione della mappa in contesti distribuiti e multi-robot~\cite{lodirizzini2010iros,lodirizzini2010graphbot}.
-Una diversa decomposizione del problema ML SLAM ha consentito di proporre
-un algoritmo di costruzione di mappe multi-ipotesi al fine di 
-fornire un metodo robusto agli errori nell'associazione di dati\cite{lodirizzini2011icra}.
-Tale metodo si propone di estendere i vantaggi delle metodologie multi-ipotesi tradizionali applicate
-originariamente al mapping topologico alla stima di mappe metriche. 
-
-Tale formulazione dei problemi di SLAM si presta all'analisi formale:
-Dario Lodi Rizzini ricavato una soluzione parziale in forma chiusa del ML mappping, 
-che dimostra le relazioni tra le variabili del problema~\cite{lodirizzini2009ecmr,lodirizzini2009icar}.
-\`E stata evidenziata la dipendenza tra le variabili 
-che rappresentano l'orientamento del robot e quelle che ne definiscono posizione.
-
-\textbf{Pubblicazioni inerenti:}
-1 lavoro su rivista internazionale~\cite{lodirizzini2009ras},
-7 lavori in atti di conferenze internazionali~\cite{
-lodirizzini2011icra,lodirizzini2010iros,lodirizzini2010graphbot,
-lodirizzini2009iros,lodirizzini2009ecmr,lodirizzini2009icar,grisetti2008icra}.
 
 \subsection*{Percezione tridimensionale ed identificazione e riconoscimento di oggetti}
 
-L'elaborazione di dati sensoriali ottenuti con sensori di percezione tridimensionale e 
-rappresentati della struttura dati \emph{point cloud} \`e un tema che ha attirato recentemente l'interesse 
-della comunit\`a scientifica. 
-Dario Lodi Rizzini ha lavorato con sensori basati su diverse tecnologie, come laser scanner~\cite{aleotti2014jirs,aleotti2012icra},
-range camera~\cite{aleotti2014iros,lodirizzini2014ias}, visione monoculare e stereoscopica~\cite{lodirizzini2015ijars,
-oleari2014ifac,oleari2013iccp} ed in setup sperimentali differenti.
+La disponibilit\`a di misure tridimensionali, generalmente rappresentate in forma di point cloud, \`e un prerequisito per l'esecuzione 
+di numerosi compiti della robotica e tra questi uno dei pi\`u ricorrenti \`e il rilevamento di oggetti finalizzato alla presa ed alla manipolazione. 
+Dario Lodi Rizzini ha affrontato questo problema operando con sensori basati su diverse tecnologie, come laser scanner~\cite{aleotti2014jirs,aleotti2012icra},
+range camera~\cite{chiaravalli2020etfa, aleotti2014iros, lodirizzini2014ias}, visione monoculare e stereoscopica~\cite{lodirizzini2017caee, lodirizzini2015ijars,
+oleari2014ifac, oleari2013iccp} ed in setup sperimentali differenti.
 
-Uno dei temi di cui si \`e occupato \`e il rilevamento ed il riconoscimento di oggetti finalizzato 
-alla presa e manipolazione tramite braccia robotiche. 
-Una situazione particolarmente interessante \`e rappresentata da sensori montati sul robot manipolatore 
+Una configurazione particolarmente interessante \`e rappresentata da sensori montati sul robot manipolatore 
 \emph{eye-in-hand} perch\`e consente di controllare il punto di osservazione. 
 Nei lavori~\cite{aleotti2014jirs,aleotti2012icra} l'osservazione completa dell'oggetto di interesse
 \`e ottenuta alternando fasi di osservazione invevitabilmente parziale e di manipolazione finalizzata 
-all'osservazione delle parti in precedenza non osservate. 
-Egli ha anche studiato il problema dell'osservazione di oggetti utilizzando sensori con campo visivo 
-e range differenti, attraverso un'oculata pianificazione della posizione del sensore~\cite{aleotti2014iros}.
+all'osservazione delle parti in precedenza non osservate.
+La disponibilit\`a di sensori con differenti campi visivi (field-of-view angolare, range minimi e massimi) porta ad una variante del problema di osservazione completa degli oggetti risolvibile attraverso un'oculata pianificazione dei punti di osservazione del sensore~\cite{aleotti2014iros}. 
+Il problema del riconoscimento e della stima della posa di oggetti emerge anche nella logistica industriale, dove occorre identificare i fardelli disposti in strati pallet, 
+ed \`e stato studiato nell'ambito del progetto POR/FESR COORSA.
+\`E stato proposto un algoritmo~\cite{chiaravalli2020etfa} di riconoscimento dei prodotti, della loro disposizione e di stima della loro posa progettato per una base mobile con manipolatore. 
 
-In~\cite{lodirizzini2014ias} ha proposto un metodo di segmentazione non supervisionata di 
-point cloud ottenute con sensori di percezione 3D. 
-Il metodo proposto suddivide la point cloud in voxel e caratterizza ciascun voxel con un vettore 
-di feature (colore, pattern e forma). 
-La somiglianza tra feature e le relazioni di prossimit\`a tra voxel sono utilizzate per classificare 
-ciascun voxel con approccio \emph{Markov Random Field} e, operando sui dati etichettati, 
-per rilevare potenziali oggetti. 
-L'oggetto candidato viene, infine, confrontato con un database di modelli con tecniche di registration
-e di associazione di keypoint come quello descritto in~\cite{oleari2013iccp}.
+Altri contributi nell'ambito della percezione di oggetti sono rappresentati da lavori sulla segmentazione non supervisionata di point cloud~\cite{lodirizzini2014ias} o sul riconoscimento di oggetti in point cloud con sistema di percezione a basso costo ed usando keypoint feature~\cite{oleari2013iccp}. 
+Nel primo dei due lavori la metodologia applicata \`e stata l'etichettatura dei voxel basata su approccio~\emph{Markov Random Field} e sull'identificazione successiva di oggetti presenti nella scena. 
+
+%point cloud ottenute con sensori di percezione 3D. 
+%Il metodo proposto suddivide la point cloud in voxel e caratterizza ciascun voxel con un vettore 
+%di feature (colore, pattern e forma). 
+%La somiglianza tra feature e le relazioni di prossimit\`a tra voxel sono utilizzate per classificare 
+%ciascun voxel con approccio \emph{Markov Random Field} e, operando sui dati etichettati, 
+%per rilevare potenziali oggetti. 
+%L'oggetto candidato viene, infine, confrontato con un database di modelli con tecniche di registration
+%e di associazione di keypoint come quello descritto in~\cite{oleari2013iccp}.
  
 Nell'ambito della partecipazione al progetto PRIN MARIS,
 Dario Lodi Rizzini ha partecipato allo sviluppo di sistemi di visione subacquea stereoscopica 
-per il riconoscimento e la stima di posizione degli oggetti finalizzata alla manipolazione.
+per il riconoscimento e la stima di posizione degli oggetti finalizzata alla manipolazione. 
 Ha contribuito alla realizzazione di sistemi di visione impermeabilizzati ed allo svolgimento
 di attivit\`a sperimentale di acquisizione di dataset in un ambiente difficile come quello 
 subacqueo~\cite{oleari2014ifac,oleari2015oceans}.
-Inoltre, ha sviluppato metodi di segmentazione dell'immagine e di riconoscimento oggetto 
-per un ambiente difficile come quello sottomarino, 
+Inoltre, ha sviluppato metodi di segmentazione dell'immagine e di riconoscimento oggetto per l'ambiente marino, 
 impiegando tecniche come la segmentazione basata su grafo~\cite{kallasi2015oceans} e 
 la clusterizzazione basata su aree~\cite{lodirizzini2015ijars,oleari2014ifac,kallasi2014amra}.
 Inoltre, ha sviluppato soluzioni di visione stereoscopica sparsa per stimare la posa 3D 
@@ -227,9 +326,9 @@ e back-scattering.
 %sperimentale sul campo e confrontandosi con i pochi dataset disponibili in letteratura. 
 
 \textbf{Pubblicazioni inerenti:}
-2 lavori su riviste internazionali~\cite{aleotti2014jirs,lodirizzini2015ijars},
-7 lavori in atti di conferenze internazionali~\cite{aleotti2012icra,oleari2013iccp,
-lodirizzini2014ias,aleotti2014iros,kallasi2015oceans,oleari2015oceans}.
+5 lavori su riviste internazionali~\cite{simetti2018joe,lodirizzini2017caee,casalino2016mtsj,lodirizzini2015ijars,aleotti2014jirs},
+8 lavori in atti di conferenze internazionali~\cite{chiaravalli2020etfa,aleotti2012icra,oleari2013iccp,
+lodirizzini2014ias,aleotti2014iros,kallasi2015oceans,oleari2015oceans,oleari2016iecon}.
 
 \subsection*{Applicazioni Industriali e Robotica sul Campo}
 
@@ -239,50 +338,50 @@ ed aziende del settore dell'automazione.
 Un esempio significativo \`e la simulazione e la programmazione di macchine automatiche 
 come il pallettizzatore a formazione di strato pallet~\cite{argenti2010isr,calo2012icinco}. 
 Tale attivit\`a ha velocizzato notevolmente lo studio del comportamento della macchina e 
-la generazione di programmi personalizzati per il cliente, portando ad un reale vantaggio 
-competitivo. 
-Infine, ha contribuito al miglioramente della navigazione di Automated Guided Vehicle (AGV)
-a guida laser, ossia veicoli automatici impiegati nella logistica, nel trasporto di materiale
-e nella gestione dei magazzini. 
-In~\cite{lodirizzini2007icinco} ha proposto un metodo per mappare e rappresentare gli 
-oggetti semi-statici dell'ambiente industriale, ossia elementi non presenti stabilmente 
-nell'ambiente e non rilevabili tramite tracciamento del loro moto, che possono ridurre 
-l'efficienza degli AGV se gestiti con le politiche di sicurezza ordinarie. 
+la generazione di programmi personalizzati per il cliente, portando ad un reale vantaggio competitivo. 
 
-La partecipazione a competizioni di robotica mobile, oltre a rappresentare un 
-rafforzamento dell'attivit\`a didattica tramite il coinvolgimento di studenti, 
-ha portato alla realizzazione di sistemi robotici completi. 
-Il robot mobile realizzato per la partecipazione al Sick Robot Day 2012 ha permesso 
-di approfondire i problemi di progettazione e realizzazione di sistemi robotici 
-in grado di svolgere compiti in ambienti reali e non semplicemente di laboratorio~\cite{cigolini2014jamris}. 
-Altre esperienze di laboratorio hanno consentito di sviluppare sistemi completi 
-orientati allo svolgimento di task di esplorazione anche con percezione complessa~\cite{valeriani2013acra}.
+La navigazione di Automated Guided Vehicle (AGV) a guida laser, ossia veicoli automatici impiegati nella logistica, nel trasporto di materiale
+e nella gestione dei magazzini, \`e un ambito al quale ha dato significativi contributi. 
+La calibrazione dei parametri intrinseci ed estrinseci degli AGV \`e un'operazione delicata, che incide in modo significativo sull'accuratezza nella localizzazione,  navigazione e deposito delle merci e che \`e temporalmente dispendiosa in fase di installazione degli impianti industriali. 
+Sono stati studiati metodi per la calibrazione automatica per AGV con configurazione cinematica a triciclo~\cite{kallasi2017ras}
+che permette di completare una procedura di calibrazione in pochi minuti e senza l'intervento di un operatore. 
+Successivamente si \`e occupato anche della calibrazione degli AGV con cinematiche a quattro ruote~\cite{galasso2019rcim} in due diverse configurazioni (denominate Ackermann e dual-drive) corrispondenti a due diverse tipologie di veicoli industriali. 
+Alcuni metodi di percezione evoluta presentati in precedenza sono stati applicati alla localizzazione e navigazione di AGV in assenza di riferimenti o landmark artificiali~\cite{galasso2020sensors}. 
+In~\cite{lodirizzini2007icinco} ha proposto un metodo per mappare e rappresentare gli oggetti semi-statici dell'ambiente industriale, ossia elementi non presenti stabilmente 
+nell'ambiente e non rilevabili tramite tracciamento del loro moto, che possono ridurre l'efficienza degli AGV se gestiti con le politiche di sicurezza ordinarie. 
+
+Un'attivit\`a attualmente ancora in corso \`e legata al progetto POR/FESR POSITIVE su protocolli operativi per l'irrigazione di precisione in ambito agricolo~\cite{amoretti2020smartsys}. 
+Il suo contributo in questo progetto riguarda la definizione di innovativi metodi di comando di attrezzature irrigue per l'esecuzione automatica di piani di irrigazione di precisione e a rateo variabile. 
+
+%La partecipazione a competizioni di robotica mobile, oltre a rappresentare un 
+%rafforzamento dell'attivit\`a didattica tramite il coinvolgimento di studenti, 
+%ha portato alla realizzazione di sistemi robotici completi. 
+Nel corso degli anni ha partecipato a competizioni di robotica mobile, in particolare alcune edizioni del Sick Robot Day, che hanno permesso di integrare l'attivit\`a didattica su robot mobili e soluzioni di percezione, navigazione e localizzazione provenienti dall'attivit\`a di ricerca. 
+Alcune di tali attivit\`a sono documentate in alcuni lavori scientifici sul sistema completo~\cite{cigolini2014jamris} o sullo svolgimento di task di esplorazione anche con percezione tridimensionale \cite{valeriani2013acra}. 
+
+%Il robot mobile realizzato per la partecipazione al Sick Robot Day 2012 ha permesso 
+%di approfondire i problemi di progettazione e realizzazione di sistemi robotici 
+%in grado di svolgere compiti in ambienti reali e non semplicemente di laboratorio~\cite{cigolini2014jamris}. 
+%Altre esperienze di laboratorio hanno consentito di sviluppare sistemi completi 
+%orientati allo svolgimento di task di esplorazione anche con percezione complessa~\cite{valeriani2013acra}.
 
 
 \textbf{Pubblicazioni inerenti:}
-1 lavoro su rivista internazionale~\cite{cigolini2014jamris},
-3 lavori in atti di conferenze internazionali~\cite{valeriani2013acra,lodirizzini2012icinco,calo2012icinco,argenti2010isr}.
+3 lavori su rivista internazionale~\cite{galasso2019rcim, kallasi2017ras, cigolini2014jamris},
+5 lavori in atti di conferenze internazionali~\cite{amoretti2020smartsys, valeriani2013acra,lodirizzini2012icinco,calo2012icinco,argenti2010isr}.
 
-
-% ---------------------------------------------------------
-% TUTOR
-% ---------------------------------------------------------
-
-\section*{Altre Attivit\`a Scientifiche}
-
-\begin{itemize}
-\item Dario Lodi Rizzini (oltre ad essere stato correlatore di pi\`u di 20 tesi di laurea) \`e co-tutor di 2 dottorandi: Fabio Oleari e Fabjan Kallasi, dottorandi in Tecnologie dell'Informazione presso il Dipartimento di Ingegneria dell'Informazione dell'Universit\`a degli Studi di Parma rispettivamente del XXVIII e del XXIX ciclo. 
-\item Dario Lodi Rizzini \`e membro della IEEE ed iscritto alla IEEE Robotic and Automation Society (RAS) dal 2006. 
-\end{itemize}
 
 % ---------------------------------------------------------
 % INCARICHI
 % ---------------------------------------------------------
 
-\section*{Assegni di Ricerca ed Incarichi}
+\section*{Posizioni, Assegni di Ricerca ed Incarichi}
 
 \begin{itemize}
-\ITEMDATE{Giugno 2013 - Presente} 
+\ITEMDATE{Dicembre 2015-Presente} 
+Ricercatore a Tempo Determinato (tipo A) presso il Dipartimento di Ingegneria dell'Informazione dell'Universit\`a di Parma.
+
+\ITEMDATE{Giugno 2013 - Dicembre 2015} 
 Titolare di \emph{Assegno di Ricerca} sul tema 
 ``Metodi probabilistici per il riconoscimento di oggetti in compiti di manipolazione e di navigazione robotica''
 presso il Dipartimento di Ingegneria dell'Informazione dell'Universit\`a di Parma.
@@ -295,6 +394,9 @@ presso il Dipartimento di Ingegneria dell'Informazione dell'Universit\`a di Parm
 \emph{Prestazione d'opera autonoma occasionale} sul tema ``Interfaccia grafica di 
 programmazione per la formazione di strati di prodotto mediante manipolatore'' 
 nell'ambito della convenzione tra Universit\`a degli Studi di Parma e \emph{OCME S.r.l.}.
+
+\ITEMDATE{Luglio 2006-Gennaio 2008} 
+\emph{Borsa di studio} associata al Dottorato di Ricerca in Tecnologie dell'Informazione (ciclo XXI).
 
 \ITEMDATE{Ottobre 2005 - Giugno 2006}
 Borsa di studio sul tema ``Metodi e modelli per il software 
@@ -325,16 +427,58 @@ di Freiburg (Germania) sotto la supervisione del prof. Wolfram Burgard.
 % PROGETTI
 % ---------------------------------------------------------
 
+\section*{Responsabilit\`a di Progetti di Ricerca}
+
+\begin{itemize}
+
+\ITEMDATE{Marzo 2019-Presente. POR FSE 2014/2020 MAN3DP (Mapping And Navigation based on 3D Perception)}
+Dario Lodi Rizzini \`e \ul{referente scientifico} (principal investigator) del progetto di formazione alla ricerca MAN3DP
+e \ul{supervisore della borsa di dottorato} ad esso associata ed assegnata all'ing. Asad Ullah Khan per il ciclo
+XXXV per il Dottorato in Tecnologie dell'Informazione dell'Universit\`a degli Studi di Parma,
+vincitore del bando competitivo "Alte competenze per la ricerca e il trasferimento tecnologico"
+POR FSE 2014/2020 emanato con DGR 462-2019 dalla Regione Emilia-Romagna (importo
+massimo erogabile per il triennio di Euro 86.743,44). 
+
+\ITEMDATE{Marzo 2019-Presente. POR-FESR 2014/2020 POSITIVE (Protocolli Operativi Scalabili per l'Agricoltura di Precisione)}
+Dario Lodi Rizzini \`e \ul{coordinatore del Task 3 (Fase 4)} ``Realizzazione di protocolli operativi scalabili per la
+pianificazione dei compiti di macchine irrigatrici intelligenti'' nell'ambito del progetto POSITIVE
+selezionato nell'ambito del bando competitivo POR-FESR 2018 deliberato con DGR 986/2018 della Regione Emilia-Romagna e
+approvato con determinazione n. 4672 del 14/03/2019.
+
+\ITEMDATE{Maggio 2017-Aprile 2018.  FIL 2016 R3D-MAN (Robust 3D Mapping and Navigation)}
+Dario Lodi Rizzini \`e \ul{coordinatore del progetto} (principal investigator) di formazione alla ricerca R3D-MAN rivolto ai giovani 
+ricercatori finanziato dall'Universit\`a degli Studi di Parma con importo di Euro 4.140,00. 
+L'attivit\`a ha riguardato lo sviluppo di algoritmi per la gestione efficiente di dati sensoriali 
+acquisiti con sensore LIDAR 3D, l'estrazione di feature, la progettazione di algoritmi di registrazione 
+efficiente e la localizzazione e la mappatura. 
+
+\ITEMDATE{Febbraio 2013-Luglio 2016. PRIN MARIS (Marine Autonomous Robotics for InterventionS)} 
+Dario Lodi Rizzini partecipa al Progetto di Interesse Narionale MARIS in qualit\`a di 
+\ul{coordinatore work package} WP2 \emph{Riconoscimento oggetti e pianificazione delle prese}
+e membro dell'unit\`a di ricerca UNIPR dell'Universit\`a degli Studi di Parma e di . 
+L'attivit\`a si \`e concentrata sulla preparazione e svolgimento degli esperimenti
+di acquisizione di immagini stereoscopiche e sullo sviluppo di algoritmi di riconoscimento 
+oggetti e di stima della posa in ambiente subacqueo.
+
+\end{itemize}
+
+
 \section*{Partecipazione a Progetti di Ricerca}
 
 \begin{itemize}
 
-\ITEMDATE{Febbraio 2013-Luglio 2016. PRIN MARIS (Marine Autonomous Robotics for InterventionS)} 
-Dario Lodi Rizzini partecipa al Progetto di Interesse Narionale MARIS in qualit\`a di membro
-dell'unit\`a di ricerca UNIPR dell'Universit\`a degli Studi di Parma. 
-L'attivit\`a si \`e concentrata sulla preparazione e svolgimento degli esperimenti
-di acquisizione di immagini stereoscopiche e sullo sviluppo di algoritmi di riconoscimento 
-oggetti e di stima della posa in ambiente subacqueo.
+\ITEMDATE{Marzo 2019-Presente. POR-FESR 2014/2020 COORSA (COllaborazione tra Operatori e Robot manipolatori mobili Sicuri per la fAbbrica del futuro)}
+Dario Lodi Rizzini partecipa al progetto COORSA finanziato con bando POR-FESR 2018 deliberato con DGR
+986/2018 della Regione Emilia-Romagna e approvato con determinazione n. 4672 del 14/03/2019.
+La sua attivit\`a riguarder\`a lo sviluppo di algoritmi di localizzazione, mapping e navigazione per robot mobili 
+per la manipolazione robotica finalizzata all'esecuzione di compiti in ambiente industriale. 
+
+\ITEMDATE{Giugno 2016-Giugno 2018. POR-FESR 2014-2020 Aladin (Agroalimentare Idrointelligente)}
+Dario Lodi Rizzini ha partecipato al progetto Aladin (Agroalimentare Idrointelligente) 
+finanziato sul Bando POR FESR Emilia-Romagna sul tema della gestione della risorsa idrica - 
+agricoltura di precisione integrata nella filiera agroalimentare. 
+Il suo contributo ha riguardato la definizione delle mappe per l'irrigazione ottenute dall'elaborazione 
+di immagini e di indici di irrigazione opportunamente georeferenziati.
 
 \ITEMDATE{Giugno 2014-Marzo 2015. FP7 EuRoC (European Robotics Challenges), \\
            Challenge 1 ``Reconfigurable Interactive Manufacturing Cell''} 
@@ -372,16 +516,39 @@ Ha sviluppato algoritmi di localizzazione globale e di mapping adatti all'esecuz
 
 \end{itemize}
 
-\section*{Partecipazione a Progetti di Ricerca in convenzione con Aziende Private}
+\section*{Progetti di Ricerca in convenzione con Aziende Private}
 
 \begin{itemize}
+
+\ITEMDATE{Contratto di Ricerca UNIPR - OCME S.r.l.} 
+Titolo: ``Metodi di percezione 3D con sensori di visione e profondit\`a per il riconoscimento di prodotti e la loro manipolazione'' (Luglio 2020-Presente)
+Dario Lodi Rizzini \`e \underline{responsabile scientifico} (principal investigator) del progetto (importo di Euro 46.500,00) con decorrenza dal 1 luglio 2020 e termine 
+il 31 dicembre 2020 per l'esecuzione di attivit\`a di ricerca della proposta progettuale n. 169 denominata ``MAF Macchine Autonome \& Flessibili'' - MISE\_FCS\_DM 5 marzo 2018 finanziata dal Ministero dello Sviluppo Economico. 
+L'obiettivo della ricerca \`e studiare e sviluppare metodi per il riconoscimento di prodotti tramite sensori 3D di visione o di profondit\`a e di manipolare gli stessi sulla base dell’elaborazione dei dati sensoriali. 
+
+\ITEMDATE{Contratto di Ricerca CIDEA/UNIPR - Elettric80 S.p.A. (3D-PAL)} 
+Titolo: ``Studio e sviluppo di metodi di percezione, localizzazione, navigazione e mapping 3D in ambienti industriali'' 3DPAL (Gennaio 2018-Maggio 2020)
+Dario Lodi Rizzini \`e \underline{responsabile scientifico} (principal investigator) del progetto 3DPAL (importo di Euro 95.000,00) con decorrenza dal 1 gennaio 2018 e termine 
+il 31 maggio 2020 per l'esecuzione di attivit\`a di ricerca del progetto SIMON CUP E18I17000110009 finanziato da fondi POR-FESR 2014-2020 
+stanziati dalla Regione Emilia-Romagna. 
+L'obiettivo della ricerca \`e sviluppare metodi ed algoritmi per supportare la navigazione e l'esecuzione di compiti intelligenti
+da parte di AGV (Automated Guided Vehicles) industriali utilizzando le informazioni fornite da percezione 3D ed, in particolare, LIDAR 3D. 
+In particolare, i risultati attesi riguardano l'individuazione di riferimenti per la navigazione, la stima accurata degli ingombri, 
+la costruzione di mappe a medio-lungo termine. 
+
+\ITEMDATE{Contratto di Ricerca UNIPR - Elettric80 S.p.A.} 
+Titolo: ``Adattamento dinamico di traiettorie di AGV in funzione di rilevazioni sensoriali dell'ambiente di lavoro'' (Settembre 2016-Giugno 2018). 
+L'obiettivo \`e lo sviluppo di metodi avanzati per la localizzazione di AGV industriali 
+che utilizzino landmark ambientali ottenuti da dati sensoriali eterogenei, anche acquisiti con modalit\`a sensoriale 3D. 
+Dario Lodi Rizzini ha contribuito alla proposta ed allo sviluppo di metodi ed algoritmi 
+ed \`e \ul{relatore del dottorando Francesco Galasso} (XXXII ciclo), che ha svolto il dottorato industriale presso Elettric80 S.p.A.
 
 \ITEMDATE{Contratto di Ricerca UNIPR - Elettric80 S.p.A.} 
 Titolo: ``Navigazione Ambientale di Robot Mobili con Laser Range Finder'' (Gennaio 2014-Dicembre 2016). 
 L'obiettivo \`e lo studio e la realizzazione di metodi per la localizzazione di AGV industriali 
 senza impiegare landmark artificiali come invece avviene nei sistemi commerciali.
 Dario Lodi Rizzini ha contribuito alla proposta ed allo sviluppo di metodi ed algoritmi 
-collaborando con i dottorandi Fabjan Kallasi e Fabio Oleari.
+\ul{supervisionando} i dottorandi Fabjan Kallasi e Fabio Oleari.
 
 \ITEMDATE{Contratto di Ricerca UNIPR - Elettric80 S.p.A.} 
 Titolo: ``Tecniche avanzate di percezione per AGV mediante elaborazione in tempo reale di profili sensoriali generati da laser scanner di sicurezza'' (Gennaio 2015-Settembre 2015). 
@@ -403,7 +570,99 @@ ottimizzata di collisioni ed i metodi di generazione della geometria dello strat
 % COLLABORAZIONI RIVISTE E CONFERENZE
 % ---------------------------------------------------------
 
-\section*{Partecipazione a Competizioni Internazionali}
+\section*{Attivit\`a di Organizzazione e Coordinamento Scientifico}
+
+
+\subsubsection*{Membro di Program Committee}
+
+\begin{itemize}
+\ITEMDATE{Membro del Program Committee di ICRAI 2018}
+Membro del Program Committee della 4th International Conference on Robotics and Artificial Intelligence 2018 (ICRAI),  
+che si terr\`a a Guangzhou (China) ({\footnotesize \url{http://www.icrai.org/}}). 
+\ITEMDATE{Membro del Program Committee di ISAIR 2017}
+Membro del Program Committee del 2nd International Symposium on Artificial Intelligence and Robotics 2017 (ISAIR),  
+che si \`e tenuto a Kitakyushu (Giappone) \\
+({\footnotesize \url{https://shinoceanland.com/conference/isair2017/}}). 
+\ITEMDATE{Membro del Program Committee di ECMR 2011}
+Membro del Program Committee della European Conference on Mobile Robotics (ECMR) 2011
+tenutasi a Orebro (Svezia). 
+\end{itemize}
+
+
+\subsubsection*{Session Chair}
+
+Dario Lodi Rizzini ha svolto il compito di Session Chair alle seguenti conferenze.
+\begin{itemize}
+\item IEEE/MTS ICRA, Stoccolma (SWE), 2016. 
+\item IEEE/MTS IROS, Daejeon (KOR), 2016. 
+\item IEEE/MTS OCEANS, Genova (IT), 2015. 
+\item IEEE/RSJ Int.~Conf.~on Intelligent Robots and Systems (IROS), Taipei (USA), 2010.
+\item Intl.~Conf.~on Informatics in Control, Automation and Robotics (ICINCO), Anger (FR), 2007.
+\end{itemize}
+
+
+\subsubsection*{Revisore}
+
+Dario Lodi Rizzini \`e stato revisore per numerose riviste internazionali tra le quali si ricordano:
+\begin{itemize}
+\item IEEE~Transaction~on Robotics (T-RO).
+\item IEEE~Transaction~on Automation Science and Engineering (T-ASE).
+\item IEEE Robotics and Automation Letters (RA-L). 
+\item Elsevier Robotics and Autonomous Systems (RAS).
+\item Springer Autonomous Robots (AURO)
+\item Springer Mechatronics.
+\item Springer International Journal on~Control, Automation and Systems (IJCAS).
+\item MDPI Sensors. 
+\item MDPI Applied Sciences. 
+\end{itemize}
+
+\noindent \`E stato revisore per le seguenti conferenze internazionali:
+\begin{itemize}
+\item IEEE Int.~Conf.~on Robotics \& Automation (ICRA).
+\item IEEE/RSJ Int.~Conf.~on Intelligent Robots and Systems (IROS).
+\item Int.~Conf.~on Advanced Robotics (ICAR).
+\item European Conference on Mobile Robots (ECMR). 
+\item IEEE/MTS OCEANS. 
+\item AAAI Conference on Artificial Intelligence. 
+\item Modelling and Simulation for Autonomous Systems Workshop (MESAS)
+\item Spatial Cognition 2012.
+\item IEEE Intelligent Transportation Systems Society Conference Management System (ITSC).
+\item IEEE Control Systems Society Conference Management System (CDC).
+\item PID Conference.
+\end{itemize}
+
+\subsection*{Presentazioni Orali}
+
+Dario Lodi Rizzini ha presentato oralmente i propri lavori alle seguenti conferenze o workshop.
+\begin{itemize}
+\item 2019: ICRA, Montreal (CA).
+\item 2018: IROS, Workshop, Madrid (ES).
+\item 2017: IROS, Vancouver (CA).
+\item 2016: ICRA, Stoccolma (SWE).
+\item 2016: IROS, Daejeon (KOR).
+\item 2016: IECON, Firenze (IT).
+\item 2015: OCEANS, Genova (IT).
+\item 2014: World Congr. of IFAC, Capetown (ZA).
+\item 2014: IAS e workshop AMRA, Padova (IT).
+\item 2013: ECMR, Barcelona (ES). 
+\item 2012: ICRA Workshop, St. Paul (USA). 
+\item 2012: ICINCO, Roma (IT). 
+\item 2011: ICRA, Shangai (CN). 
+\item 2010: IROS and Graphbot Workshop, Taipei (TW).
+\item 2009: ECMR, Dubrovnik (HR).
+\item 2009: IROS, St. Louis (USA).
+\item 2009: ICAR, Munich (DE).
+\item 2009: ICRA Workshop, Kobe (JP).
+\item 2008: CIRAS, Linz (JP).
+\item 2007: ECMR, Freiburg (DE).
+\item 2007: ICINCO, Angers (FR).
+\end{itemize}
+
+% ---------------------------------------------------------
+% PREMI E COMPETIZIONI
+% ---------------------------------------------------------
+
+\section*{Premi e Competizioni Internazionali}
 
 Dario Lodi Rizzini ha coordinato la squadra costituita da studenti che ha partecipato a tre edizioni del Sick Robot Day,
 competizione di robot mobili aperta ad universit\`a e istituzioni didattiche promossa e sponsorizzata 
@@ -431,71 +690,51 @@ ed Italia.
 
 \end{itemize}
 
+\begin{itemize}
+\item Nel giugno Giugno-Settembre 2014 Dario Lodi Rizzini \`e stato membro del team Ghepard costituito da partner dell'Universit\`a degli Studi di Parma e dell'Universit\`a degli Studi di Genova che ha partecipato allo Stage 1 della Challenge 1 ``Reconfigurable Interactive Manufacturing Cell'' del FP7 EuRoC (European Robotics Challenges).
+Il team Ghepard si \`e posizionato al $2^o$ posto su 10 team qualificati (su un totale di circa 30 team iscritti).
+\end{itemize}
+
+
 % ---------------------------------------------------------
-% COLLABORAZIONI RIVISTE E CONFERENZE
+% SOFTWARE
 % ---------------------------------------------------------
 
-\section*{Partecipazione a comitati di Riviste e Conferenze e attivit\`a ulteriore di revisione scientifica}
+\section*{Sviluppo di software scientifico rilasciato pubblicamente}
 
-\subsubsection*{Membro di Program Committee e Session Chair}
-
+Dario Lodi Rizzini ha sviluppato, da solo o in collaborazione con colleghi, i seguenti progetti software legati all'attivit\`a di ricerca.
 \begin{itemize}
-\ITEMDATE{Membro del Program Committee di ECMR 2011}
-Dario Lodi Rizzini \`e stato invitato come membro del Program Committee della European Conference on Mobile Robotics (ECMR) 2012
-tenutasi a Orebro (Svezia). 
-\end{itemize}
-
-Dario Lodi Rizzini ha svolto il compito di Session Chair alle seguenti conferenze.
-\begin{itemize}
-\item IEEE/MTS OCEANS, Genova (IT), 2015. 
-\item IEEE/RSJ Int.~Conf.~on Intelligent Robots and Systems (IROS), St. Louis (USA), 2010.
-\item Intl.~Conf.~on Informatics in Control, Automation and Robotics (ICINCO), Anger (FR), 2007.
-\end{itemize}
-
-
-\subsubsection*{Revisore}
-
-Dario Lodi Rizzini \`e stato revisore per le seguenti riviste internazionali:
-\begin{itemize}
-\item IEEE~Transaction~on Robotics (T-RO).
-\item IEEE~Transaction~on Automation Science and Engineering (T-ASE).
-\item Springer Robotics and Autonomous Systems (RAS).
-\item Springer Mechatronics.
-\item Springer International Journal on~Control, Automation and Systems (IJCAS).
-\end{itemize}
-
-\noindent \`E stato revisore per le seguenti conferenze internazionali:
-\begin{itemize}
-\item IEEE Int.~Conf.~on Robotics \& Automation (ICRA).
-\item IEEE/RSJ Int.~Conf.~on Intelligent Robots and Systems (IROS).
-\item Int.~Conf.~on Advanced Robotics (ICAR).
-\item European Conference on Mobile Robots (ECMR).
-\item AAAI Conference on Artificial Intelligence. 
-\item Spacial Cognition 2012.
-\item IEEE Intelligent Transportation Systems Society Conference Management System (ITSC).
-\item IEEE Control Systems Society Conference Management System (CDC).
-\item PID'12 Conference.
-\end{itemize}
-
-\subsection*{Presentazioni Orali}
-
-Dario Lodi Rizzini ha presentato oralmente i propri lavori alle seguenti conferenze o workshop.
-\begin{itemize}
-\item 2015: OCEANS, Genova (IT).
-\item 2014: World Congr. of IFAC, Capetown (ZA).
-\item 2014: IAS e workshop AMRA, Padova (IT).
-\item 2013: ECMR, Barcelona (ES). 
-\item 2012: ICRA Workshop, St. Paul (USA). 
-\item 2012: ICINCO, Roma (IT). 
-\item 2011: ICRA, Shangai (CN). 
-\item 2010: IROS and Graphbot Workshop, Taipei (TW).
-\item 2009: ECMR, Dubrovnik (HR).
-\item 2009: IROS, St. Louis (USA).
-\item 2009: ICAR, Munich (DE).
-\item 2009: ICRA Workshop, Kobe (JP).
-\item 2008: CIRAS, Linz (JP).
-\item 2007: ECMR, Freiburg (DE).
-\item 2007: ICINCO, Angers (FR).
+\ITEMDATE{Glores (GLobally Optimal REgiStration)}{
+  Libreria C++ che realizza il metodo di registrazione di point cloud con caratterictica di ottimalit\`a globale illustrato in~\cite{consolini2020pr}. 
+  Coautori: L. Consolini, M. Locatelli. \\
+  Link: \url{https://github.com/dlr1516/glores}.
+}
+\ITEMDATE{GRD (Geometric Relation Distrbution)}{
+  Libreria C++ che realizza la signature Geometric Relation Distrbution (GRD)~\cite{lodirizzini2019ral} basate su funzioni continue per effettuare loop closure nei problemi di localizzazione e mapping con mappe di landmark 2D. \\
+  Link: \url{https://github.com/dlr1516/grd}.
+}
+\ITEMDATE{ARS (Angular Radon Spectrum)}{
+  Libreria C++ per il calcolo dell'Angular Radon Spectrum~\cite{lodirizzini2018pr} e la stima della rotazione di point cloud planare.\\
+  Link: \url{https://github.com/dlr1516/ars}.
+}
+\ITEMDATE{FALKOLib}{
+  Libreria C++ per il calcolo di keypoint feature FALKO progettate per laser scanner~\cite{kallasi2016ral} e per il calcolo di signature GLAROT per mapper di landmark bidimensionali.
+  Coautori: F. Kallasi.\\
+  Link: \url{https://github.com/dlr1516/falkolib}.
+}
+\ITEMDATE{GLAROT-3D (Geometric LAndmark relations ROTation-invariant 3D)}{
+  Libreria C++ per il calcolo di signature GLAROT-3D~\cite{lodirizzini2017iros} per effettuare loop closure nei problemi di localizzazione e mapping con mappe di landmark 2D.\\
+  Link: \url{https://github.com/dlr1516/glarot3d}.
+}
+\ITEMDATE{MARIS Vision}{
+  Collezione di package ROS in linguaggio C++ per il riconoscimento di oggetti di forma cilindrica in ambiente sottomarino realizzate nell'ambito del progetto PRIN MARIS~\cite{lodirizzini2017caee, simetti2018joe}.
+  Coautori: F. Kallasi.\\
+  Link: \url{https://github.com/dlr1516/maris\_vision}.
+}
+\ITEMDATE{Dataset MARIS}{ 
+  Rilascio di due dataset Garda 2013 e Portofino 2014 di immagini acquisite con sistema di visione stereo subacqueo~\cite{oleari2015oceans, lodirizzini2015ijars, oleari2014ifac}. \\
+  Link: \url{http://rimlab.ce.unipr.it/Maris.php}.
+}
 \end{itemize}
 
 % ---------------------------------------------------------
@@ -513,60 +752,83 @@ Dario Lodi Rizzini ha presentato oralmente i propri lavori alle seguenti confere
 
 Dario Lodi Rizzini ha svolto attivit\`a didattica nell'ambito di insegnamenti del 
 SSD ING/INF-05 ``Sistemi di elaborazione delle informazioni'' presso la Facolt\`a di Ingegneria 
-sino all'A.A. 2011-2012 e successivamente presso il Dipartimento di Ingegneria dell'Informazione 
+sino all'A.A. 2011-2012, presso il Dipartimento di Ingegneria dell'Informazione negli A.A. 2012-2016 
+e presso il Dipartimento di Ingegneria e Architettura a partire dall'A.A. 2016-2017
 dell'Universit\`a degli Studi di Parma. 
 
-\subsection*{Contratti di Insegnamento}
+\subsection*{Incarichi di Insegnamento}
 
 \begin{itemize}
-\ITEMDATE{A.A. 2012-2015}
-Dario Lodi Rizzini \`e stato \underline{docente a contratto} dell'insegnamento di ``Robotica'' (SSD ING-INF/05, 6 CFU, 44 ore)
-per il corso di Laurea Magistrale in Ingegneria Informatica del Dipartimento di Ingegneria dell'Informazione 
+\ITEMDATE{A.A. 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020}
+Dario Lodi Rizzini \`e stato \underline{docente titolare} dell'insegnamento di ``Robotica'' (SSD ING-INF/05, 6 CFU, 42 ore, poi 48 ore dall'A.A. 2019/2020)
+per il corso di Laurea Magistrale in Ingegneria Informatica del Dipartimento di Ingegneria e Architettura 
 dell'Universit\`a degli Studi di Parma.
 
-\ITEMDATE{A.A. 2011-2012}
-Dario Lodi Rizzini \`e stato \underline{docente a contratto} dell'insegnamento di ``Robotica'' (SSD ING-INF/05, 6 CFU, 44 ore)
-per il corso di Laurea Magistrale in Ingegneria Informatica della Facolt\`a di Ingegneria 
+\ITEMDATE{A.A. 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016}
+Dario Lodi Rizzini \`e stato \underline{docente a contratto} dell'insegnamento di ``Robotica'' (SSD ING-INF/05, 6 CFU, 42 ore)
+per il corso di Laurea Magistrale in Ingegneria Informatica del Dipartimento di Ingegneria dell'Informazione 
+o della Facolt\`a di Ingegneria (nell'A.A. 2011/2012)
 dell'Universit\`a degli Studi di Parma.
+
+%\ITEMDATE{A.A. 2011-2012}
+%Dario Lodi Rizzini \`e stato \underline{docente a contratto} dell'insegnamento di ``Robotica'' (SSD ING-INF/05, 6 CFU, 42 ore)
+%per il corso di Laurea Magistrale in Ingegneria Informatica della Facolt\`a di Ingegneria 
+%dell'Universit\`a degli Studi di Parma.
 
 \ITEMDATE{A.A. 2010-2011}
 Dario Lodi Rizzini \`e stato \underline{docente a contratto} del Modulo 2 dell'insegnamento di ``Robotica'' 
 (SSD ING-INF/05, 3 CFU, 22 ore) per il corso di Laurea Magistrale in Ingegneria Informatica 
 della Facolt\`a di Ingegneria dell'Universit\`a degli Studi di Parma.
-Il Modulo 1 dell'insegnamento di ``Robotica'' (3 CFU) \`e stato affidato all'ing. Jacopo Aleotti.
 
 \ITEMDATE{A.A. 2009-2010}
 Dario Lodi Rizzini \`e stato \underline{docente a contratto} del Modulo 2 dell'insegnamento di ``Robotica'' 
 (SSD ING-INF/05, 2 CFU, 16 ore) per il corso di Laurea Magistrale in Ingegneria Informatica della Facolt\`a di Ingegneria.
-Il Modulo 1 dell'insegnamento di ``Robotica''  (3 CFU) \`e stato affidato all'ing. Jacopo Aleotti.
 
 \ITEMDATE{A.A. 2009-2010}
 Contratto per attivit\`a didattica integrativo per il modulo di
-``Sistemi Operativi A'' (SSD ING-INF/05) per il corso di Laurea in Ingegneria Informatica con didattica a 
+``Sistemi Operativi A'' (SSD ING-INF/05, 10 ore) per il corso di Laurea in Ingegneria Informatica con didattica a 
 distanza in Ingegneria dell'Universit\`a degli Studi di Parma.
+\end{itemize}
+
+\subsection*{Attivit\`a didattica per Dottorato di Ricerca}
+
+\begin{itemize}
+
+\ITEMDATE{A.A. 2018/2019, 2019/2020}
+Dario Lodi Rizzini \`e stato \underline{docente titolare} dell'insegnamento di ``Methods of Probabilistic Robotics'' (2 CFU, 16 ore)
+per il Dottorato in Tecnologie dell'Informazione del Dipartimento di Ingegneria e Architettura 
+dell'Universit\`a degli Studi di Parma con conferimento da parte del Collegio dei docenti. 
+L'insegnamento \`e stato svolto nel novembre-dicembre 2018 e nel mese di maggio 2020. 
+
 \end{itemize}
 
 \subsection*{Attivit\`a di Sostegno alla Didattica}
 
 \begin{itemize}
 
-\ITEMDATE{A.A. 2009-2015} 
+\ITEMDATE{A.A. da 2009/2010 al 2014/2015 e A.A. 2017/2018, 2018/2019, 2019/2020 (9 A.A. complessivi)} 
 Attivit\`a didattica di sostegno all'insegnamento di ``Sistemi Operativi ed in Tempo Reale'' 
 (SSD ING-INF/05, 9 CFU, titolare: prof. Stefano Caselli)
 per i corsi di Laurea Magistrale in Ingegneria Informatica
 della Facolt\`a di Ingegneria dell'Universit\`a degli Studi di Parma.
 
-\ITEMDATE{A.A. 2006-2009} 
+\ITEMDATE{A.A. 2015/2016, 2016/2017} 
+Attivit\`a didattica di sostegno all'insegnamento di ``Sistemi Operativi'' 
+(SSD ING-INF/05, 6 CFU, titolare: prof. Stefano Caselli)
+per i corsi di Laurea in Ingegneria Informatica, Elettronica e delle Telecomunicazioni
+del Dipartimento di Ingegneria e Architettura dell'Universit\`a degli Studi di Parma.
+
+\ITEMDATE{A.A. 2006/2007, 2007/2008, 2008/2009} 
 Attivit\`a didattica di sostegno all'insegnamento di ``Sistemi Operativi B'' (SSD ING-INF/05, 5 CFU, titolare: prof. Stefano Caselli)
 per i corsi di Laurea Specialistica in Ingegneria Informatica, in Ingegneria Elettronica ed in Ingegneria delle Telecomunicazioni
 della Facolt\`a di Ingegneria dell'Universit\`a degli Studi di Parma.
 
-\ITEMDATE{A.A. 2006-2009} 
+\ITEMDATE{A.A. 2006/2007, 2007/2008, 2008/2009} 
 Attivit\`a didattica di sostegno all'insegnamento di ``Robotica'' (SSD ING-INF/05, 5 CFU, titolare: prof. Stefano Caselli)
 per il corso di Laurea Specialistica in Ingegneria Informatica 
 della Facolt\`a di Ingegneria dell'Universit\`a degli Studi di Parma.
 
-\ITEMDATE{A.A. 2006-2007} 
+\ITEMDATE{A.A. 2006/2007} 
 Contratto per attivit\`a di tutorato per il corso di ``Sistemi Operativi B'' (SSD ING-INF/05, 5 CFU, titolare: prof. Stefano Caselli)
 per i corsi di Laurea Specialistica in Ingegneria Elettronica, in Ingegneria Informatica ed in Ingegneria delle Telecomunicazioni 
 della Facolt\`a di Ingegneria dell'Universit\`a degli Studi di Parma.
@@ -577,9 +839,140 @@ per i corsi di Laurea in Ingegneria Elettronica, in Ingegneria Informatica ed in
 della Facolt\`a di Ingegneria dell'Universit\`a degli Studi di Parma. 
 \end{itemize}
 
-\subsection*{Correlatore di Tesi di Laurea}
 
-Dario Lodi Rizzini \`e stato correlatore di pi\`u di 20 tesi di Laurea, Laurea Magistrale e Specialistica.
+% ---------------------------------------------------------
+% TUTOR DOTTORATO
+% ---------------------------------------------------------
+
+\section*{Tutorato di Studenti di Dottorato di Ricerca}
+
+Dario Lodi Rizzini \`e relatore (tutor) di 3 studenti del Dottorato di ricerca in Tecnologie dell'Informazione dell'Universit\`a degli Studi di Parma elencati di seguito:
+\begin{itemize}
+\item Ernesto Fontana del XXXVI ciclo;
+\item Asad Ullah Khan del XXXV ciclo;
+\item Francesco Galasso del XXXII ciclo, che ha svolto attivit\`a di dottorato industriale in alta formazione inquadrato in Elettric80 S.p.a. 
+  Nel 2020 ha discusso la tesi con titolo ``Advanced AGV Positioning and Localization Methods in Industrial Environments''.
+\end{itemize}
+%
+\vspace{3mm}
+%
+Dario Lodi Rizzini \`e co-tutor di 2 due dottorandi del Dottorato di ricerca in Tecnologie dell'Informazione dell'Universit\`a degli Studi di Parma elencati di seguito:
+\begin{itemize}
+\item Fabjan Kallasi del XXIX ciclo, che ha discusso nel 2017 la tesi con titolo ``Robust Feature-based LIDAR Localization and Mapping in Unstructured Environments'';
+\item Fabio Oleari del XXVIII ciclo, che ha discusso nel 2016 la tesi di dottorato con titolo ``Designing a Computer Vision System for Underwater Robotic Interventions''.
+\end{itemize}
+
+%\begin{itemize}
+%\item Dario Lodi Rizzini (oltre ad essere stato correlatore di pi\`u di 30 tesi di laurea) 
+%\`e o \`e stato relatore dei dottorandi in Tecnologie dell'Informazione Asad Ullah Khan (XXXV ciclo) e Francesco Galasso (XXXII ciclo), 
+%\`e stato co-tutor di due dottori di ricerca in Tecnologie dell'Informazione, Fabio Oleari e Fabjan Kallasi, presso il Dipartimento di Ingegneria dell'Informazione dell'Universit\`a degli Studi di Parma rispettivamente del XXVIII e del XXIX ciclo. 
+%%\item Dario Lodi Rizzini \`e membro della IEEE ed iscritto alla IEEE Robotic and Automation Society (RAS) dal 2006. 
+%\end{itemize}
+
+
+\section*{Revisore esterno di tesi di dottorato}
+
+\begin{itemize}
+\item Dario Lodi Rizzini \`e stato \underline{revisore esterno} (valutatore) della tesi di dottorato del dott. Rama Pollini 
+  nell'ambito del Dottorato in Ingegneria dell'Informazione dell'Universit\`a Politecnica delle Marche. 
+\end{itemize}
+
+
+\section*{Relatore di Tesi di Laurea}
+
+Relatore di 6 tesi (e di altre 2 che sono in svolgimento) di Laurea, Laurea Magistrale e Specialistica in Ingegneria Informatica presso l'Universit\`a degli Studi di Parma elencate di seguito: 
+\begin{enumerate}
+\item Ernesto Fontana, tesi di Laurea Magistrale, ``Sviluppo di una Libreria per il Riconoscimento di Strutture Verticali in Point Cloud ottenute con Sensore Lidar 3D'', 
+   ``Development of a Library for Vertical Structure Detection in Point Clouds acquired with Lidar 3D Sensor'', 2020;
+\item Alessia Bertugli, tesi di Laurea Magistrale, ``Sviluppo di un Ambiente Simulato per la Presa di Oggetti Basata Su Deep Reinforcement Learning'', 
+   ``Development of a Simulated Environment for Grasping Objects based on Deep Reinforcement Learning'', 2019;
+\item Aniello Farina, tesi di Laurea, ``Integrazione del Sistema di Mapping Google Cartographer Su Robot Mobile'', 
+  ``Integration of Google Cartographer Mapping System on Mobile Robots'', 2019;
+\item Gabriele Ranzieri, tesi di Laurea, ``Integrazione del Sistema di Navigazione ROS su Robot Mobile'', ``Integration of ROS Navigation System on Mobile Robot'', 2019;
+\item Riccardo Turdo, tesi di Laurea Magistrale, ``Sviluppo di una Libreria per la Registrazione di Point Cloud Organizzate Acquisite con Sensore LIDAR 3D'',
+  ``Development of a Library for Organized Point Cloud Registration Acquired with LIDAR D Sensor'', 2018;
+\item Ernesto Fontana, tesi di Laurea, ``Sviluppo di una Libreria per il Riconoscimento di Strutture Verticali in Point Cloud ottenute con Sensore Lidar 3D", 
+   ``Development of a Library for Vertical Structure Detection in Point Clouds acquired with Lidar 3D Sensor'', 2018;
+\end{enumerate}
+%
+\vspace{3mm}
+%
+Correlatore di 24 tesi di Laurea, Laurea Magistrale e Specialistica in Ingegneria Informatica presso l'Universit\`a degli Studi di Parma elencate di seguito: 
+\begin{enumerate}
+\item Davide Zanella, tesi di Laurea Magistrale, ``Localizazione efficiente di oggetti per macchine automatiche ad alta velocit\`a mediante telecamera di profondit\`a'', 2020;
+\item Valeria Salzano, tesi di Laurea Magistrale, ``Un'applicazione Software per il Rilevamento della Posizione di Oggetti Mobili  in Ambienti Industriali'', 2017;
+%
+\item Giulia Scaltriti, tesi di Laurea Magistrale, ``Rilevazione di Oggetti  in Movimento Mediante Ricerca di Cluster  in Scansioni Laser Acquisite Da Agv Industriali'', 2015;
+\item Fabio Pezzi, tesi di Laurea, ``Realizzazione di un Sistema di Comparazione per Algoritmi di Allineamento Tra Immagini di Profondit\`a'', 2015
+\item Luca Carpi, tesi di Laurea Magistrale, ``Un Sistema per la Rilevazione di Oggetti in Movimento Mediante Laser Scanner per un Agv Industriale'', 2015;
+%
+\item Marco Bottioni, tesi di Laurea Magistrale, ``Calibrazione di Telecamere e Segmentazione di Immagini per il Riconoscimento di Oggetti in Ambiente Subacqueo'', 2014;
+\item Roberto Pasquali, tesi di Laurea, ``Valutazione di Sensori Inerziali per la Calibrazione di Robot Mobili'', 2014;
+%
+\item Fabjan Kallasi,  tesi di Laurea Magistrale, ``Un Sistema di Visione Stereo per la Ricerca di Oggetti in Ambiente Subacqueo'', 2013;
+\item Marco Cigolini, tesi di Laurea Magistrale, ``Elaborazione di Point Cloud Basata Su Indicizzazione Planare per la Navigazione di Robot Mobili'', 2013;
+\item Marco Paini, tesi di Laurea Magistrale, ``Localizzazione e Ricostruzione Dell'ambiente Basate Sulla Visione per un Mav'', 2013;
+\item Andrea Minari, tesi di Laurea, ``Realizzazione e Valutazione di un Sistema Embedded di Visione Stereo per Ambienti Subacquei'', 2013;
+\item Federico Barbieri, tesi di Laurea, ``Un Sistema per l'acquisizione di Immagini Da Telecamera di Profondit\`a Con Elaborazione Basata Su GPU'', 2013;
+%
+\item Fabio Oleari, tesi di Laurea Magistrale, ``Riconoscimento di Oggetti 3D Tramite Visione Stereo e Allineamento di Caratteristiche FPF'', 2012;
+\item Andrea Atti, tesi di Laurea Magistrale, ``Segmentazione e Classificazione di Immagini di Profondit\`a Mediante Estrazione di Caratteristiche e Markov Random Field'', 2012;
+\item Isabella Salsi, tesi di Laurea Magistrale, ``Costruzione di Mappe in Ambienti Semi-statici Tramite Fusione Sensoriale per la Navigazione di Robot Mobili'', 2012;
+%
+\item Gionata Boccalini, tesi di Laurea Magistrale, ``Realizzazione di un Sistema per la Navigazione Efficiente di LGV in Ambienti Quasi-statici'', 2011;
+\item Andrea De Pasquale, tesi di Laurea Magistrale, ``Ricostruzione 3D di Oggetto Con Sensore Laser in Configurazione Eye-in-hand'', 2011;
+\item Luigi Galati, tesi di Laurea Magistrale, ``Realizzazione di un Sistema di Acquisizione Ed Elaborazione di Immagini Basato Su Telecamera di Profondita'', 2011;
+\item Andrea Lattanzi, tesi di Laurea Magistrale, ``Sviluppo di un Sistema Basato Su Laser Scanner di Ausilio Alla Movimentazione di Container Mediante Gru A Portale'', 2011; 
+%
+\item Piero Micelli, tesi di Laurea, ``Inseguimento di Persone Mediante Robot Mobile Dotato di Telecamera di Profondit\`a'', 2010;
+%
+\item Gionata Boccalini, tesi di Laurea, ``Elaborazione di Scansioni Laser per la Costruzione Incrementale di Mappe'', 2008;
+%
+\item Luca Domenichini, tesi di Laurea Magistrale, ``Progettazione di Un’architettura Configurabile per la Localizzazione in Tempo Reale di Robot Mobili'', 2007;
+\item Bruno Ferrarini, tesi di Laurea Magistrale, ``Estensione e Valutazione di un Localizzatore Bayesiano per Robot Mobili'', 2007;
+%
+\item Giovanni Capra, ``Realizzazione di un Algoritmo di Scan Matching per Sistemi di Misura della  Distanza Con Tecnologia Laser'', 2006. 
+\end{enumerate}
+
+% ---------------------------------------------------------
+% INCARICHI ISTITUZIONALI
+% ---------------------------------------------------------
+
+\section{Attivit\`a organizzativa e di coordinamento per l'Ateneo}
+
+Dario Lodi Rizzini ha svolto per il Dipartimento di Ingegneria e Architettura dell'Universit\`a di Parma i compiti organizzativi e di servizio riportati di seguito:
+\begin{itemize}
+
+\ITEMDATE{Giugno 2017-Presente} 
+Membro del Collegio dei docenti del Dottorato in Tecnologie dell'Informazione per i cicli dal XXXIII al XXXVI.
+
+\ITEMDATE{7 marzo 2018} 
+Membro interno della commissione esaminatrice per il conseguimento del titolo di Dottore di ricerca in Tecnologie dell'Informazione per il ciclo XXXI con difesa delle tesi e discussione.
+
+\ITEMDATE{Ottobre 2020} 
+Membro interno della commissione di ammissione agli anni successivi del Dottorato di ricerca in Tecnologie dell'Informazione per i cicli XXXIII, XXXIV e XXXV.
+
+\ITEMDATE{2018-2019} 
+Membro esperto delle commissioni esaminatrici dell'Esame di Stato per l'abilitazione alla Professione di Ingegnere di Parma nelle rispettive sessioni estive ed invernali. 
+
+\end{itemize}
+
+% ---------------------------------------------------------
+% PUBBLICAZIONI
+% ---------------------------------------------------------
+
+%\subsection*{Conoscenze tecniche specifiche}
+
+%\begin{description}
+% \item[\textit{Sistemi Operativi:}] GNU/Linux, Sun Solaris, Windows
+% \item[\textit{Linguaggi di programmazione:}] C/C++, Java, Matlab/Octave
+% \item[\textit{Tecniche di programmazione e sviluppo:}] Analisi e progettazione 
+%      Object Oriented, Programmazione generica (in C++), Design Pattern
+% \item[\textit{Strumenti di sviluppo:}] CMake, Git, Subversion (SVN), IDE
+% \item[\textit{Sistemi Robotici:}] Programmazione di robot mobili e manipolatori. Sistemi di visione. 
+%\item[\textit{Framework per la Robotica:}] 
+%      Robot Operating System (ROS)
+%\end{description}
 
 % ---------------------------------------------------------
 % PUBBLICAZIONI
@@ -590,16 +983,37 @@ Dario Lodi Rizzini \`e stato correlatore di pi\`u di 20 tesi di Laurea, Laurea M
 \noindent\textbf{Riviste Internazionali:}
 
 \begin{itemize}
+\BIBCITEM{lodirizzini2019ral}
+\BIBCITEM{galasso2019rcim}
+\BIBCITEM{lodirizzini2018pr}
+\BIBCITEM{simetti2018joe}
+\BIBCITEM{kallasi2017ras}
+\BIBCITEM{lodirizzini2017caee}
+\BIBCITEM{casalino2016mtsj}
+\BIBCITEM{kallasi2016ral}
 \BIBCITEM{lodirizzini2015ijars}
 \BIBCITEM{aleotti2014jirs}
 \BIBCITEM{cigolini2014jamris}
 \BIBCITEM{lodirizzini2009ras}
+
+\BIBCITEM{aleotti2020ram}
+\BIBCITEM{galasso2020sensors}
+\BIBCITEM{consolini2020pr}
 \end{itemize}
 
 % Conferenze
 \noindent\textbf{Atti di Conferenze Internazionali con revisione su articolo completo:}
 
 \begin{itemize}
+\BIBCITEM{chiaravalli2020etfa}
+\BIBCITEM{amoretti2020smartsys}
+%
+\BIBCITEM{lodirizzini2018irosws}
+%
+\BIBCITEM{lodirizzini2017iros}
+%
+\BIBCITEM{kallasi2016iros}
+\BIBCITEM{oleari2016iecon}
 %
 \BIBCITEM{kallasi2015oceans}
 \BIBCITEM{oleari2015oceans}
@@ -663,19 +1077,77 @@ Dario Lodi Rizzini \`e stato correlatore di pi\`u di 20 tesi di Laurea, Laurea M
 \BIBCITEM{lodirizzini2009thesis}
 \end{itemize}
 
+
+\section{Pubblicazioni per la procedura di selezione}
+
+Lista delle pubblicazioni indicate per la procedura di selezione per il reclutamento di n. 1 Ricercatore a tempo determinato, destinatario di un contratto di lavoro subordinato, di durata triennale, al fine di svolgere attività di ricerca, di didattica e di didattica integrativa, ai sensi dell’art. 24, comma 3, lettera b) della Legge 240/2010, per il Settore concorsuale 09/H1 ``Sistemi di elaborazione delle informazioni'', Settore Scientifico-disciplinare ING-INF/05 ``Sistemi di elaborazione delle informazioni'', presso il Dipartimento di Ingegneria e Architettura, bandita con Decreto Rettorale n. 958/2020 Prot. 0168003 del 06/08/2020 ed il cui avviso è stato pubblicato sulla Gazzetta Ufficiale - IV Serie Speciale - Concorsi ed Esami - n. 73 del 18/09/2020. 
+
+\begin{enumerate}
+\BIBCITENUM{lodirizzini2019ral}
+\BIBCITENUM{galasso2019rcim}
+\BIBCITENUM{lodirizzini2018pr}
+\BIBCITENUM{simetti2018joe}
+\BIBCITENUM{kallasi2017ras}
+\BIBCITENUM{lodirizzini2017caee}
+\BIBCITENUM{kallasi2016ral}
+\BIBCITENUM{kallasi2016iros}
+\BIBCITENUM{lodirizzini2015ijars}
+\BIBCITENUM{aleotti2014jirs}
+\BIBCITENUM{lodirizzini2009ras}
+\BIBCITENUM{grisetti2008icra}
+\end{enumerate}
+
+{\footnotesize
+\begin{table}[!ht]
+  \begin{tabular}{|r|l|c|c|c|c|c|}
+  \hline
+  N. & Pubblicazione                             & Citazioni & CiteScore & SJR   & SNIP & Quartile/GII-GRIN-SCIE \\
+  \hline
+    1 &\cite{lodirizzini2019ral} IEEE RA-L 2019  &   1       &  6.3      & 1.555 & 1.936 & Q1 (CS) \\
+    2 &\cite{galasso2019rcim} RCIM 2019          &   7       & 10.2      & 1.795 & 2.994 & Q1 (CS) \\
+    3 &\cite{lodirizzini2018pr} PR 2018          &   3       & 13.1      & 2.323 & 3.638 & Q1 (CS) \\
+    4 &\cite{simetti2018joe} IEEE JOE 2018       &  21       &  5.9      & 0.808 & 2.071 & Q1 (EEE) \\
+    5 &\cite{kallasi2017ras} RAS 2017            &   9       &  7.7      & 0.988 & 2.232 & Q1 (CS) \\
+    6 &\cite{lodirizzini2017caee} CAEE 2017      &  21       &  5.3      & 0.579 & 1.428 & Q1 (CSM, 2019), Q2 (prima 2019) \\
+    7 &\cite{kallasi2016ral} IEEE RA-L 2016      &  22       &  6.3      & 1.555 & 1.936 & Q1 (CS) \\
+    8 &\cite{kallasi2016iros} IEEE/RSJ IROS 2016 &  19       &  3.4      & 0.897 & 1.127 & GGS class 1, GGS rating A+ \\
+    9 &\cite{lodirizzini2015ijars} IJARS 2015    &  39       &  3.0      & 0.432 & 0.991 & Q2 (SW), Q3 (CSA) \\
+   10 &\cite{aleotti2014jirs} JINT 2014          &  18       &  4.9      & 0.677 & 1.614 & Q1 (ENG), Q2 (CS) \\
+   11 &\cite{lodirizzini2009ras} RAS 2009        &   6       &  7.7      & 0.988 & 2.232 & Q1 (CS) \\
+   12 &\cite{grisetti2008icra} IEEE ICRA 2008    &  52       &  5.8      & 1.412 & 1.799 & GGS class 2, GGS rating A \\
+  \hline
+  \end{tabular}
+\end{table}
+}
+
+\begin{itemize}
+\item La fonte per il numero di citazioni al 15/10/2020, CiteScore, SRJ e SNIP \`e Scopus (per l'ultimo anno disponibile, il 2019). 
+\item La stima del quartile di ciascuna rivista \`e fornita da Scimago JR ed \`e riferita all'anno 2019 (l'ultimo disponibile) facendo riferimento all'area (quando univoca) o allo specifico subject.
+\item Abbreviazioni Scimago JR areas e subjects impiegati: 
+   CS (Computer Science), 
+   CSM (Computer Science miscellaneous), 
+   CSA (Computer Science Applications), 
+   SW (Software), 
+   EEE (Electrical and Electronic Engineering), 
+   ENG (Engineering)
+\item Per le conferenze \`e stato usato il GII-GRIN-SCIE-Conference-Rating aggiornato al 30/05/2018 (ultimo disponibile) \url{http://gii-grin-scie-rating.scie.es/}.
+\end{itemize}
+
 ~\\
 ~\\
 \vfill
 \begin{minipage}[t]{7.0cm}
   \raggedright
   \parbox{7.0cm}{\centering
-    Luogo e Data, \makebox[3.0cm]{\hrulefill} %$\frac{\hspace{2.5cm}}{\hspace{2.5cm}}$
+    Parma, %\makebox[3.0cm]{\hrulefill} %$\frac{\hspace{2.5cm}}{\hspace{2.5cm}}$
   }\\
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{7.0cm}
   \parbox{7.0cm}{\centering
-    Firma \makebox[4.0cm]{\hrulefill}   %    $\frac{\hspace{6cm}}{\hspace{6cm}}$
+    Dario Lodi Rizzini \\
+    {\footnotesize (firmato e datato digitalmente) }
+%\makebox[4.0cm]{\hrulefill}   %    $\frac{\hspace{6cm}}{\hspace{6cm}}$
   }
 \end{minipage}
 
