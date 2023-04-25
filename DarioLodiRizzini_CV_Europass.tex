@@ -6,8 +6,8 @@
 \usepackage[english]{babel}
 \usepackage{notoccite}
 \usepackage{bibentry}
-%\makeatletter\let\saved@bibitem\@bibitem\makeatother
-\usepackage{hyperref}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+%\usepackage{hyperref}
 %\makeatletter\let\@bibitem\saved@bibitem\makeatother
 %\usepackage[backend=bibtex, style=numeric, sorting=ynt, defernumbers, maxnames=99]{biblatex}
 %\usepackage{europasscv-bibliography}
@@ -23,7 +23,7 @@
 \newcommand{\BIBCITE}[1]{\cite{#1} \bibentry{#1}}
 %\newcommand{\BIBCITEM}[1]{\item[\cite{#1}] \bibentry{#1}}
 %\newcommand{\BIBCITEM}[1]{\ecvitem{ \cite{#1} }{ \bibentry{#1} }}
-\newcommand{\BIBCITEM}[1]{\ecvitem{ \cite{#1} }{ \bibentry{#1} }}
+\newcommand{\BIBCITEM}[1]{\ecvitem{ \cite{#1} }{ \begin{NoHyper}\bibentry{#1}\end{NoHyper} }}  
 
 
 \ecvname{Dario Lodi Rizzini}
