@@ -83,7 +83,10 @@
 
 
 \nocite{
-aleotti2021ap,consolini2020pr,
+monica2024tvcg,
+penzotti2023compag,fontana2023sensors,
+lodirizzini2022ral,
+aleotti2021ap,%consolini2020pr,
 lodirizzini2019ral,galasso2019rcim,
 lodirizzini2018pr,simetti2018joe,
 kallasi2017ras,lodirizzini2017caee, 
@@ -91,7 +94,10 @@ casalino2016mtsj, kallasi2016ral,
 lodirizzini2015ijars, 
 aleotti2014jirs, cigolini2014jamris, 
 lodirizzini2009ras,
-fontana2021iccp,khan2021iccp,fontana2021ecmr, 
+monica2024etfa,
+penzotti2023ecpa,
+khan2022irc,lodirizzini2022raad,
+fontana2021iccp,khan2021iccp,fontana2021ecmr,
 monica2020irc,chiaravalli2020etfa,amoretti2020smartsys,
 lodirizzini2018irosws,
 lodirizzini2017iros, 
@@ -106,6 +112,8 @@ lodirizzini2009iros, lodirizzini2009ecmr, lodirizzini2009icar,
 grisetti2008icra, lodirizzini2008ciras, 
 lodirizzini2007ecmr, lodirizzini2007icinco, 
 %
+fontana2023icraws,
+lodirizzini2021simai,
 kallasi2014amra, lodirizzini2012icraworkshop, lodirizzini2010graphbot, lodirizzini2009icraworkshop, cerri2007ccmvs,
 %
 lodirizzini2008improved,
@@ -123,7 +131,11 @@ lodirizzini2009thesis}
 
   \ecvsection{Work experience}
 
-  \ecvtitle{February 2021 -- present}{Assistant Professor}
+  \ecvtitle{February 2024 -- Present}{Associate Professor}
+  \ecvitem{}{ (Professore di Fascia II) }
+  \ecvitem{}{Dipartimento di Ingegneria e Architettura, Universit\`a degli Studi di Parma}
+
+  \ecvtitle{February 2021 -- January 2024}{Assistant Professor}
   \ecvitem{}{ (Ricercatore a Tempo Determinato - tipo B) }
   \ecvitem{}{Dipartimento di Ingegneria e Architettura, Universit\`a degli Studi di Parma}
 
@@ -227,9 +239,9 @@ lodirizzini2009thesis}
   \ecvitem{}{Several of my works address the issues related to the integration of sensor data into a consistent representation. 
     The paper~\cite{kallasi2016ral} proposes FALKO, one of the first effective keypoint features from laser scans to build a landmark map. 
     The signatures GLAROT (Geometric Landmark Relation Orientation-invariant)~\cite{kallasi2016iros, lodirizzini2017iros} and GRD (Geometric Relation Distribution)~\cite{lodirizzini2019ral} effectively address the loop closure problem for landmark maps. 
-    I proposed Angular Randon Spectrum (ARS)~\cite{lodirizzini2018pr} to solve map registration problem by decoupling the estimation of rotation and translation. 
+    I proposed Angular Randon Spectrum (ARS)~\cite{lodirizzini2018pr, lodirizzini2022ral, fontana2023sensors} to solve map registration problem by decoupling the estimation of rotation and translation. 
     The ARS provides a formally sound description of collinearity.
-    GLORES algorithm~\cite{consolini2020pr} presents one of the first globally optimal registration algorithms for alignment of planar point maps. 
+    %GLORES algorithm~\cite{consolini2020pr} presents one of the first globally optimal registration algorithms for alignment of planar point maps. 
   }
 
   \ecvtitle{}{Advanced Perception}  
@@ -252,9 +264,10 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
   \ecvitem{}{
     I have worked on several projects related to industrial automation and robotics, often for food industry applications~\cite{aleotti2021ap, monica2020irc, chiaravalli2020etfa, fontana2021ecmr, fontana2021iccp}. 
     I have contributed to the development of a software tool for the simulation, programming and product format generation of an industrial palletizing machine~\cite{argenti2010isr, calo2012icinco}. 
+    Robot planning methodologies have been applied to agriculture to improve irrigation efficiency~\cite{penzotti2023compag, penzotti2023ecpa, amoretti2020smartsys} or fruit picking and manipulation~\cite{monica2024etfa}.    
   }
   \ecvitem{}{
-    Another recurrent field is the navigation of industrial AGVs (Automated Guided Vehicle) adopted in warehouse logistics. 
+    Another recurrent field is the navigation of industrial AGVs (Automated Guided Vehicle) adopted in warehouse logistics~\cite{lodirizzini2022raad}. 
     The paper in~\cite{lodirizzini2012icinco} presents an algorithm for adapting the AGV path to the presence of semi-static objects. 
     Another relevant contribution is the automatic calibration of intrinsic (kinematic) and extrinsic parameters of AGVs, which is required to precisely reach operation points (e.g. deposit and loading of pallets). 
     I proposed complete calibration methods for different kinematics including tricycle~\cite{kallasi2017ras} and four-wheel AGVs~\cite{galasso2019rcim}. 
@@ -273,17 +286,25 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
 
   \ecvsection{Research Projects}
 
-  \ecvtitle{March 2019 -- Present}{POR FSE 2014/2020 MAN3DP (Mapping And Navigation based on 3D Perception)}
+\ecvtitle{2023 -- Present}{POR-FESR 2021-2027 AGRARIAN}
+  \ecvitem{}{Project funded by Regione Emilia Romagna}
+  \ecvitem{}{Role: Principal Investigator for UNIPR-CIDEA}
+
+  \ecvtitle{2023 -- Present}{POR-FESR 2021-2027 SIMOD}
+  \ecvitem{}{Project funded by Regione Emilia Romagna}
+  \ecvitem{}{Role: Developer}
+
+  \ecvtitle{2019 -- 2022}{POR FSE 2014/2020 MAN3DP (Mapping And Navigation based on 3D Perception)}
   \ecvitem{}{Project associated to the PhD scholarship (XXXV ciclo) of PhD student Asad Ullah Khan as part of the program 
     ``Alte competenze per la ricerca e il trasferimento tecnologico'' funded by Regione Emilia Romagna}
   \ecvitem{}{Role: Principal Investigator}
-  \ecvitem{}{Maximum budget: Euro 86743.44}
+  %\ecvitem{}{Maximum budget: Euro 86743.44}
 
-  \ecvtitle{March 2019 -- Present}{POR-FESR 2014/2020 POSITIVE (Protocolli Operativi Scalabili per l'Agricoltura di Precisione)}
+  \ecvtitle{2019 -- 2022}{POR-FESR 2014/2020 POSITIVE (Protocolli Operativi Scalabili per l'Agricoltura di Precisione)}
   \ecvitem{}{Project funded by Regione Emilia Romagna}
   \ecvitem{}{Role: Coordinator of Task 3 (Work package 4): ``Development of operative scalable protocols for intelligent planning of irrigation machines'' }
 
-  \ecvtitle{March 2019 -- Present}{POR-FESR 2014/2020 COORSA (COllaborazione tra Operatori e Robot manipolatori mobili Sicuri per la fAbbrica del futuro)}
+  \ecvtitle{March 2019 -- 2022}{POR-FESR 2014/2020 COORSA (COllaborazione tra Operatori e Robot manipolatori mobili Sicuri per la fAbbrica del futuro)}
   \ecvitem{}{Project funded by Regione Emilia Romagna}
   \ecvitem{}{Role: contribution on the development of localization and navigation of mobile robots for robot manipulation in industrial environments }
 
@@ -291,7 +312,7 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
   \ecvitem{}{Internal Project of the Universit\`a degli Studi di Parma}
   \ecvitem{}{Role: Principal Investigator}
   \ecvitem{}{Goal: development of algorithms for 3D LIDAR-based perception for mapping and navigation of mobile robots}
-  \ecvitem{}{Budget: Euro 4140.00}
+  %\ecvitem{}{Budget: Euro 4140.00}
 
   \ecvtitle{June 2016 -- June 2018}{POR-FESR 2014-2020 Aladin (Agroalimentare Idrointelligente)}
   \ecvitem{}{Project funded by Regione Emilia Romagna}
@@ -332,49 +353,58 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
 % ---------------------------------------------------------
 
   \ecvsection{Research Contracts}
+  
+  \ecvtitle{November 2023 -- Present}{Research contract between CIDEA -- E80 Group S.p.A.}
+%  \ecvitem{}{Topic: ``Analysis of methods for localization and mapping based on graphical SLAM and degenerate space detection in point cloud registration'' 
+%    (``Analisi dei Metodi di Localizzazione e Mapping basati su approccio Graphical SLAM e
+%Riconoscimento di Sotto-spazi Degeneri nei problemi di Registrazione di Point Cloud in Ambienti
+%Simmetrici''). 
+%  }
+  \ecvitem{}{Role: Project Coordinator.}
 
-  \ecvtitle{July 2021 -- present}{Research contract between DIA/UNIPR -- OCME S.r.l.}
-  \ecvitem{}{Topic: ``3D perception methods with depth cameras for detection and manipulation of parcel boxes'' 
-    (``Metodi di percezione 3D con sensori di visione e profondità per il riconoscimento e manipolazione di prodotti''). 
-    The goal is the development of parcel box detection in pallet layers and manipulation with collaborative robot manipulators. 
-  }
-  \ecvitem{}{Contract actitvities are funded by MISE\_FCS\_DM 5 marzo 2018, Proposal n. 169 known as MAF ``Macchine Autonome \&
-   Flessibili''.}
+  \ecvtitle{July 2021 -- December 2023}{Research contract between DIA/UNIPR -- OCME S.r.l.}
+%  \ecvitem{}{Topic: ``3D perception methods with depth cameras for detection and manipulation of parcel boxes'' 
+%    (``Metodi di percezione 3D con sensori di visione e profondità per il riconoscimento e manipolazione di prodotti''). 
+%    The goal is the development of parcel box detection in pallet layers and manipulation with collaborative robot manipulators. 
+%  }
+%  \ecvitem{}{Contract actitvities are funded by MISE\_FCS\_DM 5 marzo 2018, Proposal n. 169 known as MAF ``Macchine Autonome \&
+%   Flessibili''.}
   \ecvitem{}{Role: Project Coordinator}
-  \ecvitem{}{Budget: Euro 46500.00}
+%  \ecvitem{}{Budget: Euro 46500.00}
+  
   \ecvtitle{January 2018 -- December 2020}{Research contract between CIDEA/UNIPR -- Elettric80 S.p.A. (3D-PAL)}
-  \ecvitem{}{Topic: ``Analysis and development of 3D perception, localization, mapping and naivgation in industrial environment'' 
-    (``Studio e sviluppo di metodi di percezione, localizzazione, navigazione e mapping 3D in ambienti industriali'') 3DPAL. 
-    The goal is the development of localization algorithms for industrial AGVs and the analysis of the impact of 3D perception and mapping algorithms to AGV navigation. 
-  }
-  \ecvitem{}{Contract actitvities are part of project SIMON CUP E18I17000110009 funded with the program POR-FESR 2014-2020 of Regione Emilia-Romagna}
+%  \ecvitem{}{Topic: ``Analysis and development of 3D perception, localization, mapping and naivgation in industrial environment'' 
+%    (``Studio e sviluppo di metodi di percezione, localizzazione, navigazione e mapping 3D in ambienti industriali'') 3DPAL. 
+%    The goal is the development of localization algorithms for industrial AGVs and the analysis of the impact of 3D perception and mapping algorithms to AGV navigation. 
+%  }
+%  \ecvitem{}{Contract actitvities are part of project SIMON CUP E18I17000110009 funded with the program POR-FESR 2014-2020 of Regione Emilia-Romagna}
   \ecvitem{}{Role: Project Coordinator}
-  \ecvitem{}{Budget: Euro 95000.00}
+%  \ecvitem{}{Budget: Euro 95000.00}
 
   \ecvtitle{September 2016 -- June 2018}{Research contract between UNIPR -- Elettric80 S.p.A.}
-  \ecvitem{}{Topic: ``Dynamic adaptative algorithms of AGV trajectories based on sensor data in work environments'' 
-    (``Adattamento dinamico di traiettorie di AGV in funzione di rilevazioni sensoriali dell'ambiente di lavoro''). 
-    The output of the contract includes the development of calibration algorithms for four-wheel AGVs and localization algorithms without artificial landmarks. 
-  }
+%  \ecvitem{}{Topic: ``Dynamic adaptative algorithms of AGV trajectories based on sensor data in work environments'' 
+%    (``Adattamento dinamico di traiettorie di AGV in funzione di rilevazioni sensoriali dell'ambiente di lavoro''). 
+%    The output of the contract includes the development of calibration algorithms for four-wheel AGVs and localization algorithms without artificial landmarks. 
+%  }
   \ecvitem{}{Role: Advisor of ing. Francesco Galasso in Dottorato Industriale in Alta Formazione XXXII ciclo (Industrial Internship PhD program).}
 
   \ecvtitle{January 2014 -- December 2016}{Research contract between UNIPR -- Elettric80 S.p.A.}
-  \ecvitem{}{Topic: ``Navigation of mobile robots based on laser range finder'' 
-    (``Navigazione Ambientale di Robot Mobili con Laser Range Finder''). 
-    The output of the contract includes the development of calibration algorithms for tricyle AGVs and accurate positioning of industrial AGVs in block-storages of industrial warehouses. 
-  }
+%  \ecvitem{}{Topic: ``Navigation of mobile robots based on laser range finder'' 
+%    (``Navigazione Ambientale di Robot Mobili con Laser Range Finder''). 
+%    The output of the contract includes the development of calibration algorithms for tricyle AGVs and accurate positioning of industrial AGVs in block-storages of industrial warehouses. 
+%  }
   \ecvitem{}{Role: Co-advisor of PhD students Fabjan Kallasi and Fabio Oleari.}
 
   \ecvtitle{January 2015 -- September 2015}{Research contract between UNIPR -- Elettric80 S.p.A.}
-  \ecvitem{}{Topic: ``Advanced perception methods for dynamic obstacle detection using safety laser scanners'' 
-    (``Tecniche avanzate di percezione per AGV mediante elaborazione in tempo reale di profili sensoriali generati da laser scanner di sicurezza''). 
-    The output of the contract includes an algorithm for detection of pedestrian and dynamic objects in laser scans to improve safety of AGV navigation. 
-  }
+%  \ecvitem{}{Topic: ``Advanced perception methods for dynamic obstacle detection using safety laser scanners'' 
+%    (``Tecniche avanzate di percezione per AGV mediante elaborazione in tempo reale di profili sensoriali generati da laser scanner di sicurezza''). 
+%    The output of the contract includes an algorithm for detection of pedestrian and dynamic objects in laser scans to improve safety of AGV navigation. 
+%  }
   \ecvitem{}{Role: consultant and developer}
 
   \ecvtitle{January 2009 -- December 2009}{Research contract between UNIPR -- OCME S.r.l.}
-  \ecvitem{}{The output of the contract includes the development of a software for simulation, programming and computation of layer arrangements for a palletizing machine. 
-  }
+%  \ecvitem{}{The output of the contract includes the development of a software for simulation, programming and computation of layer arrangements for a palletizing machine. 
+%  }
   \ecvitem{}{Role: consultant and developer}
 
 % ---------------------------------------------------------
@@ -383,10 +413,11 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
 
 \ecvsection{Presentations and Editorial Activities}
 
-  \ecvtitle{}{Program committee member}
+  \ecvtitle{}{Editorial committee member}
   \ecvitem{}{ 
     \begin{ecvitemize}
-      \item Associate Editor of IEEE International Conference on Robotics and Automation (ICRA) 2023.
+      \item Associate Editor of IEEE Robotics and Automation Letters 2024.  
+      \item Associate Editor of IEEE International Conference on Robotics and Automation (ICRA) 2023-2025.
       \item Program committee member of 4th International Conference on Robotics and Artificial Intelligence (ICRAI) 2018
       \item Program committee member of 2nd International Symposium on Artificial Intelligence and Robotics (ISAIR) 2017
       \item Program committee member of European Conference on Mobile Robotics (ECMR) 2011
@@ -438,6 +469,8 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
   \ecvtitle{}{Oral presentations}
   \ecvitem{}{ 
      \begin{ecvitemize}
+      \item 2023: ICRA, London (UK). 
+      \item 2021: SIMAI, Parma (IT).
       \item 2019: ICRA, Montreal (CA).
       \item 2018: IROS, Workshop, Madrid (ES).
       \item 2017: IROS, Vancouver (CA).
@@ -481,6 +514,27 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
             in Facolt\`a di Ingegneria and then Dipartimento di Ingegneria dell'Informazione
     \end{ecvitemize}
   }
+  
+  \ecvtitle{2023 -- Present}{Sistemi Operativi (Operating Systems)}
+  \ecvitem{}{ Laurea in Ingegneria Informatica, Elettronica e delle Telecomunicazioni (Bachelor Degree in Computer, Electronics and Communication Engineering), 
+              Dipartimento di Ingegneria e Architettura, Universit\`a degli Studi di Parma,
+              SSD ING/INF-05 ``Sistemi di elaborazione delle informazioni''
+  }
+  \ecvitem{}{Role: appointed regular professor}
+  
+  \ecvtitle{2024 -- Present}{Fondamenti di Informatica (Introduction to Computer Science)}
+  \ecvitem{}{ Laurea in Ingegneria Gestionale (Bachelor Degree in Management Engineering), 
+              Dipartimento di Ingegneria dei Sistemi e delle Tecnologie Industriali, Universit\`a degli Studi di Parma,
+              SSD ING/INF-05 ``Sistemi di elaborazione delle informazioni''
+  }
+  \ecvitem{}{Role: co-appointed regular professor}
+  
+  \ecvtitle{2022 -- 2023}{Sistemi Operativi e in Tempo Reale (Operating and Real-Time Systems)}
+  \ecvitem{}{ Laurea Magistrale in Ingegneria Informatica (Master Degree in Computer Engineering), 
+              Dipartimento di Ingegneria e Architettura, Universit\`a degli Studi di Parma,
+              SSD ING/INF-05 ``Sistemi di elaborazione delle informazioni''
+  }
+  \ecvitem{}{Role: co-appointed regular professor}
 
   \ecvtitle{2009 -- 2010}{Sistemi Operativi A (Operating Systems)}
   \ecvitem{}{ Laurea in Ingegneria Informatica con didattica a distanza (Bachelor Degree in Computer Engineering), 
@@ -489,14 +543,14 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
   }
   \ecvitem{}{Role: contract professor}
 
-  \ecvitem{2009--2015 and 2017--2020}{Sistemi Operativi e in Tempo Reale (Operating and Real-Time Systems)}
+  \ecvtitle{2009--2015 and 2017--2020}{Sistemi Operativi e in Tempo Reale (Operating and Real-Time Systems)}
   \ecvitem{}{ Laurea Magistrale in Ingegneria Informatica (Master Degree in Computer Engineering), 
               Dipartimento di Ingegneria e Architettura, Universit\`a degli Studi di Parma,
               SSD ING/INF-05 ``Sistemi di elaborazione delle informazioni''
   }
   \ecvitem{}{Role: laboratory practicals and exercises }
 
-  \ecvitem{2015--2017}{Sistemi Operativi A (Operating and Real-Time Systems)}
+  \ecvtitle{2015--2017}{Sistemi Operativi A (Operating and Real-Time Systems)}
   \ecvitem{}{ Laurea in Ingegneria Informatica, Elettronica e delle Telecomunicazioni (Master Degree in Computer, Electronic and Communication Engineering), 
               Dipartimento di Ingegneria e Architettura, Universit\`a degli Studi di Parma,
               SSD ING/INF-05 ``Sistemi di elaborazione delle informazioni''
@@ -510,7 +564,7 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
   }
   \ecvitem{}{Role: laboratory practicals and exercises }
 
-  \ecvitem{March-September 2005}{Controlli Automatici A (Automatic Control)}
+  \ecvtitle{March-September 2005}{Controlli Automatici A (Automatic Control)}
   \ecvitem{}{ Lauree in Ingegneria Informatica, Elettronica e delle Telecomunicazioni (Master Degrees in Computer, Electronic and Communication Engineering), 
               Facolt\`a di Ingegneria, Universit\`a degli Studi di Parma,
               SSD ING/INF-04
@@ -522,6 +576,9 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
 % ---------------------------------------------------------
 
   \ecvsection{Other Experiences and Qualifications}
+
+\ecvitem{2018-2023}{Referee of PhD Dissertations}
+  \ecvitem{}{(Revisore di tesi di dottorato di candidati dell'Universit\`a degli Studi di Padova e dell'Universit\`a Politecnica delle Marche)}
 
   \ecvitem{2018}{Examiner for PhD Dissertation Defense}
   \ecvitem{}{(Membro interno della Commissione Esaminatrice del Dottorato in Tecnologie dell'Informazione, ciclo XXXI, Universit\`a degli Studi di Parma)}
@@ -556,8 +613,8 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
   
   \ecvblueitem{Organisational / managerial skills}{
   \begin{ecvitemize}
-    \item I have been advisor or co-advisor of four PhD students and supervisor of more than 30 master and bachelor theses
-    \item I have been principal investigator of research contracts and regional projects as well as supervisor of work-package in a national project
+    \item I have been advisor or co-advisor of PhD students and supervisor of more than 40 master and bachelor theses
+    \item I have been principal investigator of research contracts and regional projects as well as supervisor of work-package in national projects
     \item I have been the leader of the student team taking part to Sick Robot Day international robotic competitions in 2010, 2012 and 2014, winning the later two editions
   \end{ecvitemize}
   }
@@ -566,19 +623,14 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
   
   \ecvblueitem{Computer skills}{
   \begin{ecvitemize}
-    \item Programming languages: C, C++ (including C++-11/14), Matlab/Octave, Python (basic), web scripting languages (basic)
+    \item Programming languages: C, C++ (including C++-11/14), Matlab/Octave, Python, Java, web scripting languages (basic)
     \item Programming design: experience with object and generic programming, design patterns
     \item Development tools: CMake, Git, SVN, Subversion (SVN), MS VisualStudio, several IDEs
     \item Operating systems: Linux (daily experience), Windows
     \item Specific tools: Robotic Operating System (ROS), several robotic software tools
-    \item Robot platforms: experience with Comau Smart Six, Universal Robots manipulators, mobile robot platforms
+    \item Robots: experience with Universal Robots manipulators (UR10e), Fanuc Crx10ial, Comau Smart Six, mobile robot platforms
   \end{ecvitemize}
   }
-  
-  
-%  \ecvblueitem{Other skills}{Creating pieces of Art and visiting Modern Art galleries. Enjoy all sports particularly hockey, football and running. Love to travel and experience different cultures.}
-
-%  \ecvblueitem{Driving licence}{A, B}
 
 % ---------------------------------------------------------
 % PUBBLICACTIONS
@@ -592,8 +644,11 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
 %  \nobibliography{dlr_pubblications}
   
   \ecvblueitem{Journals}{}
+      \BIBCITEM{monica2024tvcg}
+      \BIBCITEM{penzotti2023compag}      
+      \BIBCITEM{fontana2023sensors}
       \BIBCITEM{aleotti2021ap}
-      \BIBCITEM{consolini2020pr}
+      %\BIBCITEM{consolini2020pr}
       \BIBCITEM{lodirizzini2019ral}
       \BIBCITEM{galasso2019rcim}
       \BIBCITEM{lodirizzini2018pr}
@@ -607,9 +662,18 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
       \BIBCITEM{cigolini2014jamris}
       \BIBCITEM{lodirizzini2009ras}
   \ecvblueitem{Conference procedings}{}
+      % 
+      \BIBCITEM{monica2024etfa}
+      %
+      \BIBCITEM{penzotti2023ecpa}
+      %
+      \BIBCITEM{khan2022irc}
+      \BIBCITEM{lodirizzini2022raad}
+      %
+      \BIBCITEM{fontana2021ecmr}
       \BIBCITEM{fontana2021iccp}
       \BIBCITEM{khan2021iccp}
-      \BIBCITEM{fontana2021ecmr}
+      \BIBCITEM{lodirizzini2021simai}
       %
       \BIBCITEM{monica2020irc}
       \BIBCITEM{chiaravalli2020etfa}
@@ -653,6 +717,10 @@ oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} 
       \BIBCITEM{lodirizzini2007ecmr}
       \BIBCITEM{lodirizzini2007icinco}
   \ecvblueitem{Workshops}{}
+      \BIBCITEM{fontana2023icraws}
+      %
+      \BIBCITEM{lodirizzini2021simai}
+      %
       \BIBCITEM{kallasi2014amra}
       %
       \BIBCITEM{lodirizzini2012icraworkshop}
