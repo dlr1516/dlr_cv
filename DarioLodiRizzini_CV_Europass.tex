@@ -233,55 +233,49 @@ lodirizzini2009thesis}
 
   \ecvsection{Research Interests}
 
-  \ecvtitle{}{Robot Localization and Mapping} 
-  \ecvitem{}{I have worked on robot localization and mapping algorithms since my PhD program. 
-    In particular, I have studied Graphical SLAM formulation for map estimation by proposing an incremental stochastic-gradient descent solver~\cite{grisetti2008icra, lodirizzini2009ras} with the group from the University of Freiburg, a decomposition of the graph-map suitable for parallel~\cite{lodirizzini2009iros} and multi-robot estimation~\cite{lodirizzini2010iros, lodirizzini2010graphbot}, and an algorithm for correcting data association errors~\cite{lodirizzini2011icra}.
-    The papers~\cite{lodirizzini2009ecmr,lodirizzini2009icar} are among the first analyses about the structure of pose graph formulation and its possible closed-form solution. 
-  }
-  \ecvitem{}{I proposed an extension of Real-Time Particle Filter (RTPF)~\cite{lodirizzini2007icinco, lodirizzini2007ecmr, lodirizzini2008improved}, a variant of the Montecarlo robot localization algorithms suitable for real-time execution.}
-  \ecvitem{}{Several of my works address the issues related to the integration of sensor data into a consistent representation. 
-    The paper~\cite{kallasi2016ral} proposes FALKO, one of the first effective keypoint features from laser scans to build a landmark map. 
-    The signatures GLAROT (Geometric Landmark Relation Orientation-invariant)~\cite{kallasi2016iros, lodirizzini2017iros} and GRD (Geometric Relation Distribution)~\cite{lodirizzini2019ral} effectively address the loop closure problem for landmark maps. 
-    I proposed Angular Randon Spectrum (ARS)~\cite{lodirizzini2018pr, lodirizzini2022ral, fontana2023sensors} to solve map registration problem by decoupling the estimation of rotation and translation. 
-    The ARS provides a formally sound description of collinearity.
-    %GLORES algorithm~\cite{consolini2020pr} presents one of the first globally optimal registration algorithms for alignment of planar point maps. 
-  }
+  \ecvsection{Research Interests}
 
-  \ecvtitle{}{Advanced Perception}  
-  \ecvitem{}{I have extensively worked on 3D perception and point cloud processing using computer vision~\cite{lodirizzini2017caee, lodirizzini2015ijars, kallasi2015oceans,
-oleari2014ifac, oleari2013iccp}, LIDARs~\cite{aleotti2014jirs, aleotti2012icra} and depth cameras~\cite{monica2020irc, chiaravalli2020etfa, aleotti2014iros, lodirizzini2014ias}. 
-    Depending on the specific application, perception has been applied to object recognition, pose estimation and manipulation. 
-    The problem addressed in~\cite{aleotti2012icra, aleotti2014jirs} is the complete observation, reconstruction and segmentation of objects, which is achieved through next-best view planning (NBV) and integration of multiple sensor data~\cite{aleotti2014iros}. 
-  }
-  \ecvitem{}{The work in~\cite{lodirizzini2014ias} presents the segmentation and classification of voxel maps representing the environment whereas in~\cite{oleari2013iccp} we present object recognition and registration using low-cost stereo vision and keypoint features.
-  }
-  \ecvitem{}{I have contributed to the vision system of MARIS project, whose goal was the cooperative manipulation of AUVs (Autonomous Underwater Vehicle). 
-    I and my coworkers proposed several approaches to segmentation, object recognition~\cite{lodirizzini2015ijars, kallasi2015oceans} and geometric pose estimation~\cite{lodirizzini2017caee}. 
-   The developed solutions are carefully crafted to the difficult sensing conditions and to the accurate manipulation requirements. 
-  }
+\ecvitem{}{
+My research focuses on autonomous robotic systems that integrate probabilistic estimation, spatial perception, computer vision and robot manipulation. Throughout my career, I have combined methodological research on robot autonomy with application-oriented projects in industrial automation, logistics, underwater robotics and, more recently, precision agriculture.
+}
 
-  \ecvtitle{}{Field Robotics, Industrial and Agriculture Applications}  
-  \ecvitem{}{A significant portion of my research activity has been oriented toward robotic applications.
-    The perception system implemented for the previously discussed MARIS project was combined with extensive experiments to collect datasets~\cite{oleari2015oceans, oleari2014ifac, kallasi2014amra}, to build water-tight and electronically safe sensor systems~\cite{oleari2016iecon} and to integrate the sensors with the UAV system~\cite{simetti2018joe}.
-  }
-  \ecvitem{}{
-    I have worked on several projects related to industrial automation and robotics, often for food industry applications~\cite{aleotti2021ap, monica2020irc, chiaravalli2020etfa, fontana2021ecmr, fontana2021iccp}. 
-    I have contributed to the development of a software tool for the simulation, programming and product format generation of an industrial palletizing machine~\cite{argenti2010isr, calo2012icinco}. 
-    Robot planning methodologies have been applied to agriculture to improve irrigation efficiency~\cite{penzotti2023compag, penzotti2023ecpa, amoretti2020smartsys} or fruit picking and manipulation~\cite{monica2024etfa}. 
-    I have also deployed perception methods and robotic technologies for automatic fruit picking with robot manipulators~\cite{saccuti2026tfr, saccuti2026fmpmsa, saccuti2025irc, monica2024etfa} and I have studied detection of grapevine plant diseases using multi-spectral cameras~\cite{saccuti2025data}.
-  }
-  \ecvitem{}{
-    Another recurrent field is the navigation of industrial AGVs (Automated Guided Vehicle) adopted in warehouse logistics~\cite{lodirizzini2022raad}. 
-    The paper in~\cite{lodirizzini2012icinco} presents an algorithm for adapting the AGV path to the presence of semi-static objects. 
-    Another relevant contribution is the automatic calibration of intrinsic (kinematic) and extrinsic parameters of AGVs, which is required to precisely reach operation points (e.g. deposit and loading of pallets). 
-    I proposed complete calibration methods for different kinematics including tricycle~\cite{kallasi2017ras} and four-wheel AGVs~\cite{galasso2019rcim}. 
-    I also developed advanced and robust localization and navigation systems for AGVs~\cite{lodirizzini2018irosws}, which do not rely on artificial landmarks. 
-    Most of these contributions are now standard part of the industrial plants built by the industrial partners. 
-  }
-  \ecvitem{}{
-    Other contributions are related to academic experiences. 
-    Significant examples are the robotic systems developed for robot competitions like Sick Robot Day organized by sensor manufacturer~\cite{cigolini2014jamris, valeriani2013acra}. 
-  }
+\ecvtitle{}{Robot Localization, Mapping and Spatial Registration}
+
+\ecvitem{}{
+A major research theme concerns robot localization and mapping. During my PhD and subsequent collaboration with the University of Freiburg, I contributed to Graph-Based SLAM through an incremental optimizer for pose-graph estimation~\cite{grisetti2008icra,lodirizzini2009ras}, together with distributed and parallel formulations suitable for multi-robot systems and large-scale environments~\cite{lodirizzini2009iros,lodirizzini2010iros}. I also investigated the theoretical structure of pose-graph optimization and maximum-likelihood mapping~\cite{lodirizzini2009ecmr,lodirizzini2009icar}.
+}
+
+\ecvitem{}{
+A second line of work concerns place recognition and map registration. Notable contributions include FALKO, one of the first effective keypoint detectors for 2D laser scans~\cite{kallasi2016ral}, the GLAROT and GRD descriptors for landmark-based place recognition~\cite{kallasi2016iros,lodirizzini2017iros,lodirizzini2019ral}, and the Angular Radon Spectrum (ARS), a geometric representation for robust rotation estimation and point-cloud registration~\cite{lodirizzini2018pr,lodirizzini2022ral,fontana2023sensors}. These works established a coherent research line on geometric representations for localization and registration that continues in current studies on globally optimal multi-scan alignment.
+}
+
+\ecvtitle{}{Perception, Computer Vision and Robotic Manipulation}
+
+\ecvitem{}{
+My research on perception addresses the extraction of geometric and semantic information from LiDAR, stereo vision, RGB-D and 3D sensing systems. I have investigated active perception and next-best-view planning for object reconstruction and manipulation~\cite{aleotti2012icra,aleotti2014jirs}, object recognition from stereo and depth data~\cite{oleari2013iccp,lodirizzini2014ias}, and the integration of multiple sensor modalities for robotic applications.
+}
+
+\ecvitem{}{
+These methodologies have been applied to challenging manipulation scenarios. Within the PRIN MARIS project, I contributed to perception systems for underwater intervention robots, including object detection, segmentation and pose estimation under adverse sensing conditions~\cite{lodirizzini2015ijars,kallasi2015oceans,lodirizzini2017caee,simetti2018joe}. More recently, I have developed perception and manipulation systems for industrial mobile manipulators and automated warehouse operations~\cite{aleotti2021ap,chiaravalli2020etfa}.
+}
+
+\ecvitem{}{
+Another long-standing topic is autonomous navigation for industrial AGVs. My contributions include safe navigation in dynamic warehouse environments~\cite{lodirizzini2012icinco}, calibration methodologies for tricycle and four-wheel vehicles~\cite{kallasi2017ras,galasso2019rcim}, and feature-based localization systems that avoid artificial infrastructure~\cite{lodirizzini2018irosws}. Several of these solutions have been transferred to industrial partners and deployed in operational logistics facilities.
+}
+
+\ecvtitle{}{Precision Agriculture and Field Robotics}
+
+\ecvitem{}{
+In recent years my research has increasingly focused on precision agriculture through regional projects (ALADIN, POSITIVE, AGRARIAN), the AGRITECH National Research Centre, and collaborations with agricultural stakeholders. The common objective is the development of autonomous robotic solutions for sustainable and data-driven agricultural operations.
+}
+
+\ecvitem{}{
+A first research direction concerns decision support and planning for precision irrigation. I have contributed to methodologies for variable-rate irrigation based on environmental sensing and optimization techniques~\cite{amoretti2020smartsys,penzotti2023compag,penzotti2023ecpa}, enabling more efficient use of water resources in open-field cultivation.
+}
+
+\ecvitem{}{
+A second direction addresses robotic harvesting and agricultural manipulation. Recent work includes perception and manipulation systems for autonomous tomato harvesting using mobile manipulators, soft grippers and force sensing~\cite{monica2024etfa,saccuti2026tfr}. In parallel, I have investigated crop monitoring and disease detection using multispectral imaging, with particular attention to vineyard applications~\cite{saccuti2025data}. These activities combine robotics, computer vision, machine learning and advanced sensing technologies to support the digital transformation of agriculture.
+}
 
 
 % ---------------------------------------------------------
